@@ -1,61 +1,46 @@
-cheml.chem package
+cheml.chem module
 ==================
 
-Subpackages
------------
 
-.. toctree::
+.. cheml.chem.CoulombMatrix
+.. ------------------------
 
-    cheml.chem.examples
-
-Submodules
-----------
-
-cheml.chem.CoulMat module
--------------------------
-
-.. automodule:: cheml.chem.CoulMat
+.. .. automodule:: cheml.chem.CoulombMatrix
     :members:
     :undoc-members:
     :show-inheritance:
 
-cheml.chem.DistMat module
--------------------------
+.. cheml.chem.BagofBonds
+.. ---------------------
 
-.. automodule:: cheml.chem.DistMat
+.. .. automodule:: cheml.chem.BagofBonds
     :members:
     :undoc-members:
     :show-inheritance:
 
-cheml.chem.Dragon module
-------------------------
+.. cheml.chem.RDKitFingerprint
+.. ---------------------------
 
-.. automodule:: cheml.chem.Dragon
+.. .. automodule:: cheml.chem.RDKitFingerprint
     :members:
     :undoc-members:
     :show-inheritance:
 
-cheml.chem.Magpie module
-------------------------
+.. cheml.chem.Dragon
+.. -----------------
 
-.. automodule:: cheml.chem.Magpie
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-cheml.chem.RDKFP module
------------------------
-
-.. automodule:: cheml.chem.RDKFP
+.. .. automodule:: cheml.chem.Dragon
     :members:
     :undoc-members:
     :show-inheritance:
 
 
-Module contents
----------------
+
+.. Molecular Descriptors
+.. ---------------------
 
 .. automodule:: cheml.chem
     :members:
-    :undoc-members:
+..    :undoc-members:
     :show-inheritance:
+

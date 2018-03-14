@@ -8,11 +8,9 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>cheml.visualization package &mdash; ChemML 1 documentation</title>
+  <title>cheml.visualization module &mdash; ChemML 0.4.1 documentation</title>
   
 
-  
-  
   
   
 
@@ -35,9 +33,9 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ChemML 1 documentation" href="index.html"/>
-        <link rel="up" title="cheml package" href="cheml.html"/>
-        <link rel="prev" title="cheml.search package" href="cheml.search.html"/> 
+    <link rel="top" title="ChemML 0.4.1 documentation" href="index.html"/>
+        <link rel="up" title="cheml library" href="cheml.html"/>
+        <link rel="prev" title="cheml.search module" href="cheml.search.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -46,7 +44,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -87,34 +84,24 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">ChemML Wrapper documentation</span></p>
+                <p class="caption"><span class="caption-text">ChemML Wrapper documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Format</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File Generator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Contents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CMLWReference.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWReference.html">Wrapper Reference</a></li>
 </ul>
 <p class="caption"><span class="caption-text">ChemML library documentation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cheml.html">cheml package</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="cheml.html#subpackages">Subpackages</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="cheml.chem.html">cheml.chem package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cheml.initialization.html">cheml.initialization package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cheml.preprocessing.html">cheml.preprocessing package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cheml.nn.html">cheml.nn package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cheml.search.html">cheml.search package</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">cheml.visualization package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#cheml-visualization-matplotlib-module">cheml.visualization.matplotlib module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#module-contents">Module contents</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="cheml.html#module-contents">Module contents</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="cheml.html">cheml library</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cheml.chem.html">cheml.chem module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cheml.chem.magpie_python.html">cheml.chem.magpie_python module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cheml.initialization.html">cheml.initialization module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cheml.datasets.html">cheml.datasets module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cheml.preprocessing.html">cheml.preprocessing module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cheml.nn.keras.html">cheml.nn.keras module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cheml.search.html">cheml.search module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">cheml.visualization module</a></li>
 </ul>
 </li>
 </ul>
@@ -129,10 +116,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">ChemML</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ChemML</a>
       </nav>
 
 
@@ -141,64 +126,140 @@
         <div class="rst-content">
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="cheml.html">cheml package</a> &raquo;</li>
-        
-      <li>cheml.visualization package</li>
-    
-    
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="cheml.html">cheml library</a> &raquo;</li>
+      
+    <li>cheml.visualization module</li>
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/cheml.visualization.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="cheml-visualization-package">
-<h1>cheml.visualization package<a class="headerlink" href="#cheml-visualization-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="cheml-visualization-module">
+<h1>cheml.visualization module<a class="headerlink" href="#cheml-visualization-module" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-cheml.visualization"></span><dl class="docutils">
+<dt>The cheml.visualization module includes:</dt>
+<dd><ul class="first last simple">
+<li>Scatter_2D: <code class="xref py py-func docutils literal"><span class="pre">Scatter_2D()</span></code></li>
+<li>hist: <a class="reference internal" href="#cheml.visualization.hist" title="cheml.visualization.hist"><code class="xref py py-func docutils literal"><span class="pre">hist()</span></code></a></li>
+<li>SaveFigure: <a class="reference internal" href="#cheml.visualization.SaveFigure" title="cheml.visualization.SaveFigure"><code class="xref py py-func docutils literal"><span class="pre">SaveFigure()</span></code></a></li>
+</ul>
+</dd>
+</dl>
+<dl class="class">
+<dt id="cheml.visualization.hist">
+<em class="property">class </em><code class="descclassname">cheml.visualization.</code><code class="descname">hist</code><span class="sig-paren">(</span><em>nbins</em>, <em>rwidth=1</em>, <em>xmin=0</em>, <em>xmax=0</em>, <em>bestfit=False</em>, <em>lineshapecolor=''</em>, <em>xlabel='x'</em>, <em>ylabel='y'</em>, <em>title='histogram'</em>, <em>isformatter=False</em>, <em>formatter_type=''</em>, <em>kwargs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#cheml.visualization.hist" title="Permalink to this definition">¶</a></dt>
+<dd><p>(hist)
+Uses matplotlib.pyplot to create a simple histogram.
+(<a class="reference external" href="https://matplotlib.org/2.2.0/index.html">https://matplotlib.org/2.2.0/index.html</a>)</p>
+<dl class="docutils">
+<dt>nbins: integer</dt>
+<dd>number of bins</dd>
+<dt>rwidth: integer, optional (default=1)</dt>
+<dd>width of the bars in the histogram</dd>
+<dt>xmin,xmax: integer, optional(default = 0,0)</dt>
+<dd>set upper and lower limits of the x axis</dd>
+</dl>
+<p>bestfit: Boolean, optional (default = False)</p>
+<dl class="docutils">
+<dt>linshapecolor: string, optional (default = &#8216;&#8217;)</dt>
+<dd>shape and color of the lines in the histogram</dd>
+<dt>xlabel, ylabel: strings, optional (default = &#8216;x&#8217;,&#8217;y&#8217;)</dt>
+<dd>label for the x and y axes</dd>
+<dt>title</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">string, optional (default = &#8216;histogram&#8217;)</span><dd>title for the figure</dd>
+</dl>
+<p>isformatter: Boolean, optional (default= False)</p>
+<p>formatter_type: string, optional (default = &#8216;&#8217;)</p>
+<dl class="docutils">
+<dt>kwargs: dictionary, optional (default ={})</dt>
+<dd>add any matplotlib options in the form of a dictionary.
+provide keys in the form of a string.
+for example kwargs = {&#8216;key&#8217;:value}</dd>
+</dl>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cheml.datasets</span> <span class="k">import</span> <span class="n">load_organic_density</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">smiles</span><span class="p">,</span><span class="n">density</span><span class="p">,</span><span class="n">features</span><span class="o">=</span><span class="n">load_organic_density</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cheml.visualization</span> <span class="k">import</span> <span class="n">hist</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pl4</span><span class="o">=</span><span class="n">hist</span><span class="p">(</span><span class="n">nbins</span><span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;normed&#39;</span><span class="p">:</span><span class="kc">True</span><span class="p">,</span><span class="s1">&#39;facecolor&#39;</span><span class="p">:</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;ec&#39;</span><span class="p">:</span><span class="s1">&#39;black&#39;</span><span class="p">},</span> <span class="n">lineshapecolor</span><span class="o">=</span><span class="s1">&#39;g-&#39;</span><span class="p">,</span> <span class="n">formatter_type</span><span class="o">=</span><span class="s1">&#39;percent&#39;</span><span class="p">,</span> <span class="n">rwidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">xmin</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">xmax</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fig1</span><span class="o">=</span><span class="n">pl4</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">density</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="section" id="cheml-visualization-matplotlib-module">
-<h2>cheml.visualization.matplotlib module<a class="headerlink" href="#cheml-visualization-matplotlib-module" title="Permalink to this headline">¶</a></h2>
+<dl class="method">
+<dt id="cheml.visualization.hist.plot">
+<code class="descname">plot</code><span class="sig-paren">(</span><em>dflist</em><span class="sig-paren">)</span><a class="headerlink" href="#cheml.visualization.hist.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>(plot)
+This is the main function to create a simple histogram from dflist</p>
+<dl class="docutils">
+<dt>dflist</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">pandas dataframe or list of pandas dataframes</span><dd>specify the data that needs to be plot.
+provide this while calling the plot function</dd>
+</dl>
+<dl class="docutils">
+<dt>f</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">matplotlib object</span><dd>returns the matplotlib object containing the plot information</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="cheml.visualization.SaveFigure">
+<em class="property">class </em><code class="descclassname">cheml.visualization.</code><code class="descname">SaveFigure</code><span class="sig-paren">(</span><em>obj</em>, <em>filename</em>, <em>output_directory=None</em>, <em>format='png'</em>, <em>kwargs={}</em><span class="sig-paren">)</span><a class="headerlink" href="#cheml.visualization.SaveFigure" title="Permalink to this definition">¶</a></dt>
+<dd><p>(SaveFigure)
+Accepts a matplotlib object and saves the figure with distinct options and at a specific location.
+Displays the path to the saved figure.</p>
+<dl class="docutils">
+<dt>obj: matplotlib object</dt>
+<dd>contains information about the plot</dd>
+<dt>filename: string</dt>
+<dd>name of the file that needs to be saved</dd>
+<dt>output_directory: string, optional (default=None)</dt>
+<dd>specify the folder where the figure needs to be saved.
+If the output directory that is specified does not exist, a new directory is created.</dd>
+<dt>format: string, optional (default=&#8217;png&#8217;)</dt>
+<dd>format of the figure that needs to be saved.</dd>
+<dt>kwargs</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">dictionary, optional (default = {})</span><dd>add any matplotlib options in the form of a dictionary.
+provide keys in the form of a string.
+for example kwargs = {&#8216;key&#8217;:value}</dd>
+</dl>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cheml.visualization</span> <span class="k">import</span> <span class="n">SaveFigure</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sav</span><span class="o">=</span><span class="n">SaveFigure</span><span class="p">(</span><span class="n">fig1</span><span class="p">,</span><span class="s1">&#39;abc1&#39;</span><span class="p">,</span><span class="s1">&#39;plots&#39;</span><span class="p">,</span><span class="n">kwargs</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;facecolor&#39;</span><span class="p">:</span><span class="s1">&#39;w&#39;</span><span class="p">,</span><span class="s1">&#39;dpi&#39;</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span><span class="s1">&#39;pad_inches&#39;</span><span class="p">:</span><span class="mf">0.1</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sav</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">main_directory</span><span class="o">=</span><span class="s1">&#39;plots&#39;</span><span class="p">)</span>
+<span class="go">The Plot has been saved at:  plots/plots/abc1.png</span>
+</pre></div>
 </div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
-</div>
+<dl class="method">
+<dt id="cheml.visualization.SaveFigure.fit">
+<code class="descname">fit</code><span class="sig-paren">(</span><em>main_directory='.'</em><span class="sig-paren">)</span><a class="headerlink" href="#cheml.visualization.SaveFigure.fit" title="Permalink to this definition">¶</a></dt>
+<dd><p>(fit)
+This is the main function that saves the figure.</p>
+<dl class="docutils">
+<dt>main_directory: string, optional (default = &#8216;.&#8217;)</dt>
+<dd>specify the parent directory where the folder needs to be saved.</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 
 
-           </div>
-           <div class="articleComments">
-            
            </div>
           </div>
           <footer>
@@ -206,7 +267,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="cheml.search.html" class="btn btn-neutral" title="cheml.search package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="cheml.search.html" class="btn btn-neutral" title="cheml.search module" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -237,11 +298,10 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1',
+            VERSION:'0.4.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

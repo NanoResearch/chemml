@@ -8,11 +8,9 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>API Reference &mdash; ChemML 1 documentation</title>
+  <title>Wrapper Reference &mdash; ChemML 0.4.1 documentation</title>
   
 
-  
-  
   
   
 
@@ -35,9 +33,9 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ChemML 1 documentation" href="index.html"/>
+    <link rel="top" title="ChemML 0.4.1 documentation" href="index.html"/>
         <link rel="next" title="ConvertFile" href="include_CMLWR1Enter.html"/>
-        <link rel="prev" title="Table of Contents" href="CMLWContentsTable.html"/> 
+        <link rel="prev" title="Table of Methods" href="CMLWContentsTable.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -46,7 +44,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -87,15 +84,12 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">ChemML Wrapper documentation</span></p>
+                <p class="caption"><span class="caption-text">ChemML Wrapper documentation</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Format</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File Generator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Contents</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Methods</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Wrapper Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#enter">Enter</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="include_CMLWR1Enter.html">ConvertFile</a></li>
 <li class="toctree-l3"><a class="reference internal" href="include_CMLWR1Enter.html#pyscript">PyScript</a></li>
@@ -107,69 +101,102 @@
 <li class="toctree-l3"><a class="reference internal" href="include_CMLWR1Enter.html#read-table">read_table</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#represent">Represent</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html">APEAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#aprdfattributegenerator">APRDFAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#bagofbonds">BagofBonds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#chargedependentattributegenerator">ChargeDependentAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#chemicalorderingattributegenerator">ChemicalOrderingAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#coordinationnumberattributegenerator">CoordinationNumberAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#coulombmatrix">CoulombMatrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#coulombmatrixattributegenerator">CoulombMatrixAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#distancematrix">DistanceMatrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#dragon">Dragon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#effectivecoordinationnumberattributegenerator">EffectiveCoordinationNumberAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#elementfractionattributegenerator">ElementFractionAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#elementpairpropertyattributegenerator">ElementPairPropertyAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#elementalpropertyattributegenerator">ElementalPropertyAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#gclpattributegenerator">GCLPAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#ioniccompoundproximityattributegenerator">IonicCompoundProximityAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#ionicityattributegenerator">IonicityAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#latticesimilarityattributegenerator">LatticeSimilarityAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#localpropertydifferenceattributegenerator">LocalPropertyDifferenceAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#localpropertyvarianceattributegenerator">LocalPropertyVarianceAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#meredigattributegenerator">MeredigAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#prdfattributegenerator">PRDFAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#packingefficiencyattributegenerator">PackingEfficiencyAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#rdkitfingerprint">RDKitFingerprint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#stoichiometricattributegenerator">StoichiometricAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#structuralheterogeneityattributegenerator">StructuralHeterogeneityAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#valenceshellattributegenerator">ValenceShellAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Represent.html#yangomegaattributegenerator">YangOmegaAttributeGenerator</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#prepare">Prepare</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html">Bag_of_Bonds</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#coulomb-matrix">Coulomb_Matrix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#distancematrix">DistanceMatrix</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#dragon">Dragon</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#missingvalues">MissingValues</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#rdkitfingerprint">RDKitFingerprint</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#split">Split</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#binarizer">Binarizer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#imputer">Imputer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#kfold">KFold</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#kernelpca">KernelPCA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#maxabsscaler">MaxAbsScaler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#minmaxscaler">MinMaxScaler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#normalizer">Normalizer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#onehotencoder">OneHotEncoder</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#pca">PCA</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#polynomialfeatures">PolynomialFeatures</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#robustscaler">RobustScaler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#shufflesplit">ShuffleSplit</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#standardscaler">StandardScaler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#stratifiedshufflesplit">StratifiedShuffleSplit</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR2Prepare.html#train-test-split">train_test_split</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html">ConstantColumns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#missingvalues">MissingValues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#outliers">Outliers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#split">Split</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#binarizer">Binarizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#imputer">Imputer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#kfold">KFold</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#kernelpca">KernelPCA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#leaveoneout">LeaveOneOut</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#maxabsscaler">MaxAbsScaler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#minmaxscaler">MinMaxScaler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#normalizer">Normalizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#onehotencoder">OneHotEncoder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#pca">PCA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#polynomialfeatures">PolynomialFeatures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#robustscaler">RobustScaler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#shufflesplit">ShuffleSplit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#standardscaler">StandardScaler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#stratifiedshufflesplit">StratifiedShuffleSplit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#train-test-split">train_test_split</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Prepare.html#concat">concat</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#model">Model</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html">ARDRegression</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#bayesianridge">BayesianRidge</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#elasticnet">ElasticNet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#kernelridge">KernelRidge</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#lars">Lars</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#lasso">Lasso</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#lassolars">LassoLars</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#linearregression">LinearRegression</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#linearsvr">LinearSVR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#logisticregression">LogisticRegression</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#mlpregressor">MLPRegressor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#multitaskelasticnet">MultiTaskElasticNet</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#multitasklasso">MultiTaskLasso</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#nusvr">NuSVR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#ridge">Ridge</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#sgdregressor">SGDRegressor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR3Model.html#svr">SVR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html">ARDRegression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#bayesianridge">BayesianRidge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#elasticnet">ElasticNet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#kernelridge">KernelRidge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#lars">Lars</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#lasso">Lasso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#lassolars">LassoLars</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#linearregression">LinearRegression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#linearsvr">LinearSVR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#logisticregression">LogisticRegression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#mlpregressor">MLPRegressor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#multitaskelasticnet">MultiTaskElasticNet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#multitasklasso">MultiTaskLasso</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#nusvr">NuSVR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#ridge">Ridge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#sgdregressor">SGDRegressor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Model.html#svr">SVR</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#search">Search</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Search.html">GridSearchCV</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Search.html#cross-val-predict">cross_val_predict</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Search.html#cross-val-score">cross_val_score</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Search.html#evaluate-regression">evaluate_regression</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Search.html#learning-curve">learning_curve</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Search.html#scorer-regression">scorer_regression</a></li>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR4Search.html#corr">corr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR5Search.html">GridSearchCV</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR5Search.html#cross-val-predict">cross_val_predict</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR5Search.html#cross-val-score">cross_val_score</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR5Search.html#evaluate-regression">evaluate_regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR5Search.html#learning-curve">learning_curve</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR5Search.html#scorer-regression">scorer_regression</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR5Search.html#corr">corr</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#mix">Mix</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#visualize">Visualize</a><ul class="simple">
+<li class="toctree-l2"><a class="reference internal" href="#visualize">Visualize</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR7Visualize.html">Scatter_2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR7Visualize.html#hist">hist</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#store">Store</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="include_CMLWR7Store.html">SaveFile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR8Store.html">SaveFigure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="include_CMLWR8Store.html#savefile">SaveFile</a></li>
 </ul>
 </li>
 </ul>
@@ -177,7 +204,7 @@
 </ul>
 <p class="caption"><span class="caption-text">ChemML library documentation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="cheml.html">cheml package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cheml.html">cheml library</a></li>
 </ul>
 
             
@@ -190,10 +217,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">ChemML</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ChemML</a>
       </nav>
 
 
@@ -202,48 +227,30 @@
         <div class="rst-content">
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>API Reference</li>
-    
-    
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Wrapper Reference</li>
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/CMLWReference.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="api-reference">
-<span id="chemml-wrapper-reference"></span><h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
-<p>This is the task/function reference of ChemML wrapper.</p>
+  <div class="section" id="wrapper-reference">
+<span id="chemml-wrapper-reference"></span><h1>Wrapper Reference<a class="headerlink" href="#wrapper-reference" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="enter">
 <h2>Enter<a class="headerlink" href="#enter" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
@@ -259,32 +266,66 @@
 </ul>
 </div>
 </div>
+<div class="section" id="represent">
+<h2>Represent<a class="headerlink" href="#represent" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html">APEAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#aprdfattributegenerator">APRDFAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#bagofbonds">BagofBonds</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#chargedependentattributegenerator">ChargeDependentAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#chemicalorderingattributegenerator">ChemicalOrderingAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#coordinationnumberattributegenerator">CoordinationNumberAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#coulombmatrix">CoulombMatrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#coulombmatrixattributegenerator">CoulombMatrixAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#distancematrix">DistanceMatrix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#dragon">Dragon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#effectivecoordinationnumberattributegenerator">EffectiveCoordinationNumberAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#elementfractionattributegenerator">ElementFractionAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#elementpairpropertyattributegenerator">ElementPairPropertyAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#elementalpropertyattributegenerator">ElementalPropertyAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#gclpattributegenerator">GCLPAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#ioniccompoundproximityattributegenerator">IonicCompoundProximityAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#ionicityattributegenerator">IonicityAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#latticesimilarityattributegenerator">LatticeSimilarityAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#localpropertydifferenceattributegenerator">LocalPropertyDifferenceAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#localpropertyvarianceattributegenerator">LocalPropertyVarianceAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#meredigattributegenerator">MeredigAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#prdfattributegenerator">PRDFAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#packingefficiencyattributegenerator">PackingEfficiencyAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#rdkitfingerprint">RDKitFingerprint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#stoichiometricattributegenerator">StoichiometricAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#structuralheterogeneityattributegenerator">StructuralHeterogeneityAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#valenceshellattributegenerator">ValenceShellAttributeGenerator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Represent.html#yangomegaattributegenerator">YangOmegaAttributeGenerator</a></li>
+</ul>
+</div>
+</div>
 <div class="section" id="prepare">
 <h2>Prepare<a class="headerlink" href="#prepare" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html">Bag_of_Bonds</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#coulomb-matrix">Coulomb_Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#distancematrix">DistanceMatrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#dragon">Dragon</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#missingvalues">MissingValues</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#rdkitfingerprint">RDKitFingerprint</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#split">Split</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#binarizer">Binarizer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#imputer">Imputer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#kfold">KFold</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#kernelpca">KernelPCA</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#maxabsscaler">MaxAbsScaler</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#minmaxscaler">MinMaxScaler</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#normalizer">Normalizer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#onehotencoder">OneHotEncoder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#pca">PCA</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#polynomialfeatures">PolynomialFeatures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#robustscaler">RobustScaler</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#shufflesplit">ShuffleSplit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#standardscaler">StandardScaler</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#stratifiedshufflesplit">StratifiedShuffleSplit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR2Prepare.html#train-test-split">train_test_split</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html">ConstantColumns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#missingvalues">MissingValues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#outliers">Outliers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#split">Split</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#binarizer">Binarizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#imputer">Imputer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#kfold">KFold</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#kernelpca">KernelPCA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#leaveoneout">LeaveOneOut</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#maxabsscaler">MaxAbsScaler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#minmaxscaler">MinMaxScaler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#normalizer">Normalizer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#onehotencoder">OneHotEncoder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#pca">PCA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#polynomialfeatures">PolynomialFeatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#robustscaler">RobustScaler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#shufflesplit">ShuffleSplit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#standardscaler">StandardScaler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#stratifiedshufflesplit">StratifiedShuffleSplit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#train-test-split">train_test_split</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Prepare.html#concat">concat</a></li>
 </ul>
 </div>
 </div>
@@ -292,23 +333,23 @@
 <h2>Model<a class="headerlink" href="#model" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html">ARDRegression</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#bayesianridge">BayesianRidge</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#elasticnet">ElasticNet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#kernelridge">KernelRidge</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#lars">Lars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#lasso">Lasso</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#lassolars">LassoLars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#linearregression">LinearRegression</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#linearsvr">LinearSVR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#logisticregression">LogisticRegression</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#mlpregressor">MLPRegressor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#multitaskelasticnet">MultiTaskElasticNet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#multitasklasso">MultiTaskLasso</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#nusvr">NuSVR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#ridge">Ridge</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#sgdregressor">SGDRegressor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR3Model.html#svr">SVR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html">ARDRegression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#bayesianridge">BayesianRidge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#elasticnet">ElasticNet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#kernelridge">KernelRidge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#lars">Lars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#lasso">Lasso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#lassolars">LassoLars</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#linearregression">LinearRegression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#linearsvr">LinearSVR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#logisticregression">LogisticRegression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#mlpregressor">MLPRegressor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#multitaskelasticnet">MultiTaskElasticNet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#multitasklasso">MultiTaskLasso</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#nusvr">NuSVR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#ridge">Ridge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#sgdregressor">SGDRegressor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Model.html#svr">SVR</a></li>
 </ul>
 </div>
 </div>
@@ -316,13 +357,13 @@
 <h2>Search<a class="headerlink" href="#search" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Search.html">GridSearchCV</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Search.html#cross-val-predict">cross_val_predict</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Search.html#cross-val-score">cross_val_score</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Search.html#evaluate-regression">evaluate_regression</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Search.html#learning-curve">learning_curve</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Search.html#scorer-regression">scorer_regression</a></li>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR4Search.html#corr">corr</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR5Search.html">GridSearchCV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR5Search.html#cross-val-predict">cross_val_predict</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR5Search.html#cross-val-score">cross_val_score</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR5Search.html#evaluate-regression">evaluate_regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR5Search.html#learning-curve">learning_curve</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR5Search.html#scorer-regression">scorer_regression</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR5Search.html#corr">corr</a></li>
 </ul>
 </div>
 </div>
@@ -334,13 +375,18 @@
 <div class="section" id="visualize">
 <h2>Visualize<a class="headerlink" href="#visualize" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR7Visualize.html">Scatter_2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR7Visualize.html#hist">hist</a></li>
+</ul>
 </div>
 </div>
 <div class="section" id="store">
 <h2>Store<a class="headerlink" href="#store" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="include_CMLWR7Store.html">SaveFile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR8Store.html">SaveFigure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="include_CMLWR8Store.html#savefile">SaveFile</a></li>
 </ul>
 </div>
 </div>
@@ -348,18 +394,15 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="include_CMLWR1Enter.html" class="btn btn-neutral float-right" title="ConvertFile" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="include_CMLWR1Enter.html" class="btn btn-neutral float-right" title="ConvertFile" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="CMLWContentsTable.html" class="btn btn-neutral" title="Table of Contents" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="CMLWContentsTable.html" class="btn btn-neutral" title="Table of Methods" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -390,11 +433,10 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1',
+            VERSION:'0.4.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

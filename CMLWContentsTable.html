@@ -8,11 +8,9 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Table of Contents &mdash; ChemML 1 documentation</title>
+  <title>Table of Methods &mdash; ChemML 0.4.1 documentation</title>
   
 
-  
-  
   
   
 
@@ -35,8 +33,8 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ChemML 1 documentation" href="index.html"/>
-        <link rel="next" title="API Reference" href="CMLWReference.html"/>
+    <link rel="top" title="ChemML 0.4.1 documentation" href="index.html"/>
+        <link rel="next" title="Wrapper Reference" href="CMLWReference.html"/>
         <link rel="prev" title="Input File Generator" href="CMLWInputFileGenerator.html"/> 
 
   
@@ -46,7 +44,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -87,19 +84,16 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">ChemML Wrapper documentation</span></p>
+                <p class="caption"><span class="caption-text">ChemML Wrapper documentation</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Format</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File Generator</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Table of Contents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CMLWReference.html">API Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Table of Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWReference.html">Wrapper Reference</a></li>
 </ul>
 <p class="caption"><span class="caption-text">ChemML library documentation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="cheml.html">cheml package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cheml.html">cheml library</a></li>
 </ul>
 
             
@@ -112,10 +106,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">ChemML</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ChemML</a>
       </nav>
 
 
@@ -124,59 +116,40 @@
         <div class="rst-content">
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>Table of Contents</li>
-    
-    
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Table of Methods</li>
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/CMLWContentsTable.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="table-of-contents">
-<h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
-<p>This is a complete list of all the methods that are available through ChemML Wrapper interface. You can click on each function
+  <div class="section" id="table-of-methods">
+<span id="chemml-wrapper-table"></span><h1>Table of Methods<a class="headerlink" href="#table-of-methods" title="Permalink to this headline">¶</a></h1>
+<p>This is a complete list of all the methods that are available through the ChemML Wrapper. You can click on each function name
 for further information.</p>
-<dl class="docutils">
-<dt>Table’s columns describe:</dt>
-<dd><ul class="first last simple">
-<li>task and subtask: for an easier classification of methods</li>
+<blockquote>
+<div><ul class="simple">
+<li>task and subtask: methods are classified according to their potential role in a machine learning workflow</li>
 <li>host: the main library/dependency required for running a method</li>
-<li>function: the method name that determines a block/node of computation graph</li>
-<li>input and output tokens: available tokens in each block that collect specific information and send/receive it to/from other blocks</li>
+<li>function: the method name that determines a node in the final computation graph</li>
+<li>input and output tokens: the only available containers in each block that send/receive related information to/from other blocks</li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 <table border="1" class="docutils">
 <colgroup>
 <col width="2%" />
@@ -188,7 +161,7 @@ for further information.</p>
 <col width="31%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">&#160;</th>
+<tr class="row-odd"><th class="head">&nbsp;</th>
 <th class="head">task</th>
 <th class="head">subtask</th>
 <th class="head">host</th>
@@ -211,7 +184,7 @@ for further information.</p>
 <td>datasets</td>
 <td>cheml</td>
 <td><a class="reference internal" href="wrapper_docs/cheml.load_cep_homo.html#load-cep-homo"><span class="std std-ref">load_cep_homo</span></a></td>
-<td>(doesn’t receive anything)</td>
+<td>(doesn&#8217;t receive anything)</td>
 <td>smiles, homo</td>
 </tr>
 <tr class="row-even"><td>3</td>
@@ -219,7 +192,7 @@ for further information.</p>
 <td>datasets</td>
 <td>cheml</td>
 <td><a class="reference internal" href="wrapper_docs/cheml.load_organic_density.html#load-organic-density"><span class="std std-ref">load_organic_density</span></a></td>
-<td>(doesn’t receive anything)</td>
+<td>(doesn&#8217;t receive anything)</td>
 <td>smiles, features, density</td>
 </tr>
 <tr class="row-odd"><td>4</td>
@@ -227,7 +200,7 @@ for further information.</p>
 <td>datasets</td>
 <td>cheml</td>
 <td><a class="reference internal" href="wrapper_docs/cheml.load_xyz_polarizability.html#load-xyz-polarizability"><span class="std std-ref">load_xyz_polarizability</span></a></td>
-<td>(doesn’t receive anything)</td>
+<td>(doesn&#8217;t receive anything)</td>
 <td>df, coordinates</td>
 </tr>
 <tr class="row-even"><td>5</td>
@@ -243,7 +216,7 @@ for further information.</p>
 <td>xyz</td>
 <td>cheml</td>
 <td><a class="reference internal" href="wrapper_docs/cheml.XYZreader.html#xyzreader"><span class="std std-ref">XYZreader</span></a></td>
-<td>(doesn’t receive anything)</td>
+<td>(doesn&#8217;t receive anything)</td>
 <td>molecules</td>
 </tr>
 <tr class="row-even"><td>7</td>
@@ -251,7 +224,7 @@ for further information.</p>
 <td>table</td>
 <td>pandas</td>
 <td><a class="reference internal" href="wrapper_docs/pandas.read_excel.html#read-excel"><span class="std std-ref">read_excel</span></a></td>
-<td>(doesn’t receive anything)</td>
+<td>(doesn&#8217;t receive anything)</td>
 <td>df</td>
 </tr>
 <tr class="row-odd"><td>8</td>
@@ -259,7 +232,7 @@ for further information.</p>
 <td>table</td>
 <td>pandas</td>
 <td><a class="reference internal" href="wrapper_docs/pandas.read_table.html#read-table"><span class="std std-ref">read_table</span></a></td>
-<td>(doesn’t receive anything)</td>
+<td>(doesn&#8217;t receive anything)</td>
 <td>df</td>
 </tr>
 <tr class="row-even"><td>9</td>
@@ -458,7 +431,7 @@ for further information.</p>
 <td>Represent</td>
 <td>molecular descriptors</td>
 <td>cheml</td>
-<td><a class="reference internal" href="wrapper_docs/cheml.Bag_of_Bonds.html#bag-of-bonds"><span class="std std-ref">Bag_of_Bonds</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/cheml.BagofBonds.html#bagofbonds"><span class="std std-ref">BagofBonds</span></a></td>
 <td>molecules</td>
 <td>df</td>
 </tr>
@@ -466,7 +439,7 @@ for further information.</p>
 <td>Represent</td>
 <td>molecular descriptors</td>
 <td>cheml</td>
-<td><a class="reference internal" href="wrapper_docs/cheml.Coulomb_Matrix.html#coulomb-matrix"><span class="std std-ref">Coulomb_Matrix</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/cheml.CoulombMatrix.html#coulombmatrix"><span class="std std-ref">CoulombMatrix</span></a></td>
 <td>molecules</td>
 <td>df</td>
 </tr>
@@ -811,7 +784,7 @@ for further information.</p>
 <td>evaluate</td>
 <td>sklearn</td>
 <td><a class="reference internal" href="wrapper_docs/sklearn.scorer_regression.html#scorer-regression"><span class="std std-ref">scorer_regression</span></a></td>
-<td>(doesn’t receive anything)</td>
+<td>(doesn&#8217;t receive anything)</td>
 <td>scorer</td>
 </tr>
 <tr class="row-odd"><td>78</td>
@@ -847,6 +820,30 @@ for further information.</p>
 <td>scores</td>
 </tr>
 <tr class="row-odd"><td>82</td>
+<td>Visualize</td>
+<td>Plot</td>
+<td>cheml</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.Scatter_2D.html#scatter-2d"><span class="std std-ref">Scatter_2D</span></a></td>
+<td>df4, df1, df3, df2</td>
+<td>fig</td>
+</tr>
+<tr class="row-even"><td>83</td>
+<td>Visualize</td>
+<td>Plot</td>
+<td>cheml</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.hist.html#hist"><span class="std std-ref">hist</span></a></td>
+<td>df4, df1, df3, df2</td>
+<td>fig</td>
+</tr>
+<tr class="row-odd"><td>84</td>
+<td>Store</td>
+<td>figure</td>
+<td>cheml</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.SaveFigure.html#savefigure"><span class="std std-ref">SaveFigure</span></a></td>
+<td>fig</td>
+<td>(doesn&#8217;t send anything)</td>
+</tr>
+<tr class="row-even"><td>85</td>
 <td>Store</td>
 <td>file</td>
 <td>cheml</td>
@@ -860,18 +857,15 @@ for further information.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="CMLWReference.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="CMLWReference.html" class="btn btn-neutral float-right" title="Wrapper Reference" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="CMLWInputFileGenerator.html" class="btn btn-neutral" title="Input File Generator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="CMLWInputFileGenerator.html" class="btn btn-neutral" title="Input File Generator" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -902,11 +896,10 @@ for further information.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1',
+            VERSION:'0.4.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

@@ -8,11 +8,9 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>cheml.nn package &mdash; ChemML 1 documentation</title>
+  <title>cheml.nn module &mdash; ChemML 0.4.1 documentation</title>
   
 
-  
-  
   
   
 
@@ -35,10 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ChemML 1 documentation" href="index.html"/>
-        <link rel="up" title="cheml package" href="cheml.html"/>
-        <link rel="next" title="cheml.nn.keras package" href="cheml.nn.keras.html"/>
-        <link rel="prev" title="cheml.preprocessing package" href="cheml.preprocessing.html"/> 
+    <link rel="top" title="ChemML 0.4.1 documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -47,7 +42,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -88,38 +82,16 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">ChemML Wrapper documentation</span></p>
+                <p class="caption"><span class="caption-text">ChemML Wrapper documentation</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Format</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File Generator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Contents</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CMLWReference.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWReference.html">Wrapper Reference</a></li>
 </ul>
 <p class="caption"><span class="caption-text">ChemML library documentation</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="cheml.html">cheml package</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="cheml.html#subpackages">Subpackages</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="cheml.chem.html">cheml.chem package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cheml.initialization.html">cheml.initialization package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cheml.preprocessing.html">cheml.preprocessing package</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">cheml.nn package</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#cheml-nn-nn-dsgd-module">cheml.nn.nn_dsgd module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#cheml-nn-nn-psgd-module">cheml.nn.nn_psgd module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#module-contents">Module contents</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="cheml.search.html">cheml.search package</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cheml.visualization.html">cheml.visualization package</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="cheml.html#module-contents">Module contents</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cheml.html">cheml library</a></li>
 </ul>
 
             
@@ -132,10 +104,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">ChemML</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ChemML</a>
       </nav>
 
 
@@ -144,99 +114,41 @@
         <div class="rst-content">
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="cheml.html">cheml package</a> &raquo;</li>
-        
-      <li>cheml.nn package</li>
-    
-    
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>cheml.nn module</li>
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/cheml.nn.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="cheml-nn-package">
-<h1>cheml.nn package<a class="headerlink" href="#cheml-nn-package" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="subpackages">
-<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="cheml.nn.keras.html">cheml.nn.keras package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cheml.nn.keras.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cheml.nn.keras.html#cheml-nn-keras-mlp-module">cheml.nn.keras.mlp module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cheml.nn.keras.html#cheml-nn-keras-mlp-test-module">cheml.nn.keras.mlp_test module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cheml.nn.keras.html#module-contents">Module contents</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="cheml.nn.tensorflow.html">cheml.nn.tensorflow package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cheml.nn.tensorflow.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cheml.nn.tensorflow.html#cheml-nn-tensorflow-mlp-module">cheml.nn.tensorflow.mlp module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cheml.nn.tensorflow.html#module-contents">Module contents</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="cheml-nn-nn-dsgd-module">
-<h2>cheml.nn.nn_dsgd module<a class="headerlink" href="#cheml-nn-nn-dsgd-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="cheml-nn-nn-psgd-module">
-<h2>cheml.nn.nn_psgd module<a class="headerlink" href="#cheml-nn-nn-psgd-module" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="cheml-nn-module">
+<h1>cheml.nn module<a class="headerlink" href="#cheml-nn-module" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-cheml.nn">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cheml.nn" title="Permalink to this headline">¶</a></h2>
+<p>The &#8216;cheml.nn&#8217; module includes neural_net, 
+last modified date: April 24, 2016</p>
 </div>
 </div>
 
 
-           </div>
-           <div class="articleComments">
-            
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="cheml.nn.keras.html" class="btn btn-neutral float-right" title="cheml.nn.keras package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="cheml.preprocessing.html" class="btn btn-neutral" title="cheml.preprocessing package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -265,11 +177,10 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1',
+            VERSION:'0.4.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
