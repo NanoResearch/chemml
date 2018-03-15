@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Table of Methods &mdash; ChemML 0.4.1 documentation</title>
+  <title>Table of Contents &mdash; ChemML 0.4.1 documentation</title>
   
 
   
@@ -88,7 +88,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Format</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File Generator</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Table of Methods</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Table of Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWReference.html">Wrapper Reference</a></li>
 </ul>
 <p class="caption"><span class="caption-text">ChemML library documentation</span></p>
@@ -124,7 +124,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Table of Methods</li>
+    <li>Table of Contents</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -138,27 +138,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="table-of-methods">
-<span id="chemml-wrapper-table"></span><h1>Table of Methods<a class="headerlink" href="#table-of-methods" title="Permalink to this headline">¶</a></h1>
-<p>This is a complete list of all the methods that are available through the ChemML Wrapper. You can click on each function name
+  <div class="section" id="table-of-contents">
+<h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
+<p>This is a complete list of all the methods that are available through ChemML Wrapper interface. You can click on each function
 for further information.</p>
-<blockquote>
-<div><ul class="simple">
-<li>task and subtask: methods are classified according to their potential role in a machine learning workflow</li>
+<dl class="docutils">
+<dt>Table&#8217;s columns describe:</dt>
+<dd><ul class="first last simple">
+<li>task and subtask: for an easier classification of methods</li>
 <li>host: the main library/dependency required for running a method</li>
-<li>function: the method name that determines a node in the final computation graph</li>
-<li>input and output tokens: the only available containers in each block that send/receive related information to/from other blocks</li>
+<li>function: the method name that determines a block/node of computation graph</li>
+<li>input and output tokens: available tokens in each block that collect specific information and send/receive it to/from other blocks</li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 <table border="1" class="docutils">
 <colgroup>
 <col width="2%" />
-<col width="6%" />
-<col width="12%" />
 <col width="5%" />
-<col width="27%" />
-<col width="17%" />
-<col width="31%" />
+<col width="11%" />
+<col width="4%" />
+<col width="25%" />
+<col width="23%" />
+<col width="29%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&nbsp;</th>
@@ -201,7 +203,7 @@ for further information.</p>
 <td>cheml</td>
 <td><a class="reference internal" href="wrapper_docs/cheml.load_xyz_polarizability.html#load-xyz-polarizability"><span class="std std-ref">load_xyz_polarizability</span></a></td>
 <td>(doesn&#8217;t receive anything)</td>
-<td>df, coordinates</td>
+<td>pol, coordinates</td>
 </tr>
 <tr class="row-even"><td>5</td>
 <td>Enter</td>
@@ -824,7 +826,7 @@ for further information.</p>
 <td>Plot</td>
 <td>cheml</td>
 <td><a class="reference internal" href="wrapper_docs/cheml.Scatter_2D.html#scatter-2d"><span class="std std-ref">Scatter_2D</span></a></td>
-<td>df4, df1, df3, df2</td>
+<td>dfy1, dfx4, dfy2, dfx2, dfx3, dfx1, dfy3, dfy4</td>
 <td>fig</td>
 </tr>
 <tr class="row-even"><td>83</td>

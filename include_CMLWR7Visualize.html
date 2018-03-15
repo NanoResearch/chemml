@@ -89,7 +89,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Format</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File Generator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Contents</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="CMLWReference.html">Wrapper Reference</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="CMLWReference.html#enter">Enter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CMLWReference.html#represent">Represent</a></li>
@@ -183,19 +183,35 @@
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
 <tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line"><code class="docutils literal"><span class="pre">df4</span></code> : a pandas dataframe</div>
+<div class="line"><code class="docutils literal"><span class="pre">dfy1</span></code> : a pandas dataframe</div>
 <div class="line-block">
 <div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
 </div>
-<div class="line"><code class="docutils literal"><span class="pre">df1</span></code> : a pandas dataframe</div>
+<div class="line"><code class="docutils literal"><span class="pre">dfx4</span></code> : a pandas dataframe</div>
 <div class="line-block">
 <div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
 </div>
-<div class="line"><code class="docutils literal"><span class="pre">df3</span></code> : a pandas dataframe</div>
+<div class="line"><code class="docutils literal"><span class="pre">dfy2</span></code> : a pandas dataframe</div>
 <div class="line-block">
 <div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
 </div>
-<div class="line"><code class="docutils literal"><span class="pre">df2</span></code> : a pandas dataframe</div>
+<div class="line"><code class="docutils literal"><span class="pre">dfx2</span></code> : a pandas dataframe</div>
+<div class="line-block">
+<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+</div>
+<div class="line"><code class="docutils literal"><span class="pre">dfx3</span></code> : a pandas dataframe</div>
+<div class="line-block">
+<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+</div>
+<div class="line"><code class="docutils literal"><span class="pre">dfx1</span></code> : a pandas dataframe</div>
+<div class="line-block">
+<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+</div>
+<div class="line"><code class="docutils literal"><span class="pre">dfy3</span></code> : a pandas dataframe</div>
+<div class="line-block">
+<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+</div>
+<div class="line"><code class="docutils literal"><span class="pre">dfy4</span></code> : a pandas dataframe</div>
 <div class="line-block">
 <div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
 </div>
@@ -227,10 +243,8 @@
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">ymax</span> <span class="pre">=</span> <span class="pre">0</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xheader</span> <span class="pre">=</span> <span class="pre">['x']</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">title</span> <span class="pre">=</span> <span class="pre">Plot</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">nod</span> <span class="pre">=</span> <span class="pre">1</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">kwargs</span> <span class="pre">=</span> <span class="pre">{}</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">lpos</span> <span class="pre">=</span> <span class="pre">Best</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">subplots</span> <span class="pre">=</span> <span class="pre">[1,</span> <span class="pre">1,</span> <span class="pre">1]</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">l_pos</span> <span class="pre">=</span> <span class="pre">Best</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xmin</span> <span class="pre">=</span> <span class="pre">0</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">legend_titles</span> <span class="pre">=</span> <span class="pre">[]</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xlabel</span> <span class="pre">=</span> <span class="pre">x</span></code></div>
@@ -240,10 +254,14 @@
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">yheader</span> <span class="pre">=</span> <span class="pre">['y']</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">ymin</span> <span class="pre">=</span> <span class="pre">0</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">legend</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">df4</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">df1</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">df3</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">df2</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfy1</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx4</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfy2</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx2</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx3</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx1</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfy3</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfy4</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">fig</span></code></div>
 <div class="line"><br /></div>
 </div>

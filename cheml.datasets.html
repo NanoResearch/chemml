@@ -89,7 +89,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Format</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File Generator</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWReference.html">Wrapper Reference</a></li>
 </ul>
 <p class="caption"><span class="caption-text">ChemML library documentation</span></p>
@@ -168,15 +168,33 @@
 <dd><p>Load and return a small sample of HOMO energies of organic photovoltaic candidates from CEP database (regression).
 Clean Energy Project (CEP) database is available at: <a class="reference external" href="https://cepdb.molecularspace.org">https://cepdb.molecularspace.org</a>
 The unit of HOMO (highest occupied molecular orbitals) energies is electron Volt (eV).
-The photovaltaic candidates are provided using SMILES representation.
-=================   ==============
-rows                           500
-Columns                          2
-headers             smiles,homo_eV
-molecules rep.              SMILES
-Features                         0
-Returns               2 dataframes
-=================   ==============</p>
+The photovaltaic candidates are provided using SMILES representation.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="55%" />
+<col width="45%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>rows</td>
+<td>500</td>
+</tr>
+<tr class="row-even"><td>Columns</td>
+<td>2</td>
+</tr>
+<tr class="row-odd"><td>headers</td>
+<td>smiles,homo_eV</td>
+</tr>
+<tr class="row-even"><td>molecules rep.</td>
+<td>SMILES</td>
+</tr>
+<tr class="row-odd"><td>Features</td>
+<td>0</td>
+</tr>
+<tr class="row-even"><td>Returns</td>
+<td>2 dataframes</td>
+</tr>
+</tbody>
+</table>
 <dl class="docutils">
 <dt>data</dt>
  <span class="classifier-delimiter">:</span> <span class="classifier">two dataframes</span><dd>first dataframe for SMILES representation of molecules, shape: (500,1)
@@ -194,15 +212,33 @@ second dataframe for HOMO energies of the molecules (eV), shape: (500,1)</dd>
 <dl class="function">
 <dt id="cheml.datasets.load_organic_density">
 <code class="descclassname">cheml.datasets.</code><code class="descname">load_organic_density</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cheml.datasets.load_organic_density" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load and return 500 small organic molecules with their density and molecular descriptors.
-=================   ======================
-rows                                   500
-Columns                                202
-last twoo headers     smiles,density_Kg/m3
-molecules rep.                      SMILES
-Features                               200
-Returns                       3 dataframes
-=================   ======================</p>
+<dd><p>Load and return 500 small organic molecules with their density and molecular descriptors.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>rows</td>
+<td>500</td>
+</tr>
+<tr class="row-even"><td>Columns</td>
+<td>202</td>
+</tr>
+<tr class="row-odd"><td>last twoo headers</td>
+<td>smiles,density_Kg/m3</td>
+</tr>
+<tr class="row-even"><td>molecules rep.</td>
+<td>SMILES</td>
+</tr>
+<tr class="row-odd"><td>Features</td>
+<td>200</td>
+</tr>
+<tr class="row-even"><td>Returns</td>
+<td>3 dataframes</td>
+</tr>
+</tbody>
+</table>
 <dl class="docutils">
 <dt>data</dt>
  <span class="classifier-delimiter">:</span> <span class="classifier">three dataframes</span><dd>first dataframe for SMILES representation of molecules, shape: (500,1)
@@ -223,15 +259,33 @@ third dataframe for the molecular descriptors of molecules, shape: (500,1)</dd>
 <code class="descclassname">cheml.datasets.</code><code class="descname">load_xyz_polarizability</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cheml.datasets.load_xyz_polarizability" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load and return xyz files and polarizability (Bohr^3)
 The xyz coordinates of small organic molecules are optimized with BP86/def2svp level of theory.
-Polarizability of the molecules are also calcualted in the same level of thoery.
-=================   ======================
-rows                                    50
-Columns                                  1
-header                      polarizability
-molecules rep.                         xyz
-Features                                 0
-Returns             1 dataframe and 1 dict
-=================   ======================</p>
+Polarizability of the molecules are also calcualted in the same level of thoery.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>rows</td>
+<td>50</td>
+</tr>
+<tr class="row-even"><td>Columns</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>header</td>
+<td>polarizability</td>
+</tr>
+<tr class="row-even"><td>molecules rep.</td>
+<td>xyz</td>
+</tr>
+<tr class="row-odd"><td>Features</td>
+<td>0</td>
+</tr>
+<tr class="row-even"><td>Returns</td>
+<td>1 dataframe and 1 dict</td>
+</tr>
+</tbody>
+</table>
 <dl class="docutils">
 <dt>dictionary</dt>
 <dd>the xyz coordinates and atomic numbers of each atom of the molecule will be in a numpy array.</dd>
