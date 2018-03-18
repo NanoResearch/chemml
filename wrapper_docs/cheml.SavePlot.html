@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>hist &mdash; ChemML 0.4.1 documentation</title>
+  <title>SavePlot &mdash; ChemML 0.4.1 documentation</title>
   
 
   
@@ -122,11 +122,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>hist</li>
+    <li>SavePlot</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/wrapper_docs/cheml.hist.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/wrapper_docs/cheml.SavePlot.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -136,19 +136,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="hist">
-<span id="id1"></span><h1>hist<a class="headerlink" href="#hist" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="saveplot">
+<span id="id1"></span><h1>SavePlot<a class="headerlink" href="#saveplot" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">task:</th><td class="field-body"><div class="first line-block">
-<div class="line">Visualize</div>
+<div class="line">Store</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">subtask:</th><td class="field-body"><div class="first line-block">
-<div class="line">plot</div>
+<div class="line">figure</div>
 </div>
 </td>
 </tr>
@@ -158,25 +158,22 @@
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">function:</th><td class="field-body"><div class="first line-block">
-<div class="line">hist</div>
+<div class="line">SavePlot</div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
 <tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dfx</span></code> : a pandas dataframe</div>
+<div class="line"><code class="docutils literal"><span class="pre">fig</span></code> : a matplotlib object</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (&#8220;&lt;class &#8216;matplotlib.figure.Figure&#8217;&gt;&#8221;, &#8220;&lt;class &#8216;matplotlib.axes._subplots.AxesSubplot&#8217;&gt;&#8221;)</div>
 </div>
 </div>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
+<tr class="field-even field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
 <tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line"><code class="docutils literal"><span class="pre">fig</span></code> : a matplotlib object</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;matplotlib.figure.Figure&#8217;&gt;&#8221;,)</div>
-</div>
+<div class="line">this block doesn&#8217;t send anything</div>
 </div>
 </td>
 </tr>
@@ -192,19 +189,18 @@
 <tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">hist</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">color</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">SavePlot</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">format</span> <span class="pre">=</span> <span class="pre">png</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">output_directory</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">kwargs</span> <span class="pre">=</span> <span class="pre">{}</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">x</span> <span class="pre">=</span> <span class="pre">required_required</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">bins</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">filename</span> <span class="pre">=</span> <span class="pre">required_required</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">fig</span></code></div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="last admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The documentation page for function parameters:</p>
+<p class="last">The documentation page for function parameters: <a class="reference external" href="https://matplotlib.org/users/index.html">https://matplotlib.org/users/index.html</a></p>
 </div>
 </td>
 </tr>

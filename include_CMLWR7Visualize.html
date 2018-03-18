@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Scatter_2D &mdash; ChemML 0.4.1 documentation</title>
+  <title>decorator &mdash; ChemML 0.4.1 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ChemML 0.4.1 documentation" href="index.html"/>
         <link rel="up" title="Wrapper Reference" href="CMLWReference.html"/>
-        <link rel="next" title="SaveFigure" href="include_CMLWR8Store.html"/>
+        <link rel="next" title="SaveFile" href="include_CMLWR8Store.html"/>
         <link rel="prev" title="&lt;no title&gt;" href="include_CMLWR6Mix.html"/> 
 
   
@@ -98,8 +98,10 @@
 <li class="toctree-l2"><a class="reference internal" href="CMLWReference.html#search">Search</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CMLWReference.html#mix">Mix</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="CMLWReference.html#visualize">Visualize</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Scatter_2D</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">decorator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hist">hist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scatter2d">scatter2D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plot">plot</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="CMLWReference.html#store">Store</a></li>
@@ -141,7 +143,7 @@
       
           <li><a href="CMLWReference.html">Wrapper Reference</a> &raquo;</li>
       
-    <li>Scatter_2D</li>
+    <li>decorator</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -155,8 +157,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="scatter-2d">
-<span id="id1"></span><h1>Scatter_2D<a class="headerlink" href="#scatter-2d" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="decorator">
+<span id="id1"></span><h1>decorator<a class="headerlink" href="#decorator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -167,7 +169,7 @@
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">subtask:</th><td class="field-body"><div class="first line-block">
-<div class="line">Plot</div>
+<div class="line">artist</div>
 </div>
 </td>
 </tr>
@@ -177,43 +179,15 @@
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">function:</th><td class="field-body"><div class="first line-block">
-<div class="line">Scatter_2D</div>
+<div class="line">decorator</div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
 <tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line"><code class="docutils literal"><span class="pre">dfy1</span></code> : a pandas dataframe</div>
+<div class="line"><code class="docutils literal"><span class="pre">fig</span></code> : a matplotlib object</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
-</div>
-<div class="line"><code class="docutils literal"><span class="pre">dfx4</span></code> : a pandas dataframe</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
-</div>
-<div class="line"><code class="docutils literal"><span class="pre">dfy2</span></code> : a pandas dataframe</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
-</div>
-<div class="line"><code class="docutils literal"><span class="pre">dfx2</span></code> : a pandas dataframe</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
-</div>
-<div class="line"><code class="docutils literal"><span class="pre">dfx3</span></code> : a pandas dataframe</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
-</div>
-<div class="line"><code class="docutils literal"><span class="pre">dfx1</span></code> : a pandas dataframe</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
-</div>
-<div class="line"><code class="docutils literal"><span class="pre">dfy3</span></code> : a pandas dataframe</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
-</div>
-<div class="line"><code class="docutils literal"><span class="pre">dfy4</span></code> : a pandas dataframe</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (&#8220;&lt;class &#8216;matplotlib.figure.Figure&#8217;&gt;&#8221;,)</div>
 </div>
 </div>
 </td>
@@ -239,36 +213,29 @@
 <tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">Scatter_2D</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">ymax</span> <span class="pre">=</span> <span class="pre">0</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xheader</span> <span class="pre">=</span> <span class="pre">['x']</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">title</span> <span class="pre">=</span> <span class="pre">Plot</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">kwargs</span> <span class="pre">=</span> <span class="pre">{}</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">l_pos</span> <span class="pre">=</span> <span class="pre">Best</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xmin</span> <span class="pre">=</span> <span class="pre">0</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">legend_titles</span> <span class="pre">=</span> <span class="pre">[]</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xlabel</span> <span class="pre">=</span> <span class="pre">x</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xmax</span> <span class="pre">=</span> <span class="pre">0</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">ylabel</span> <span class="pre">=</span> <span class="pre">y</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">sc</span> <span class="pre">=</span> <span class="pre">[]</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">yheader</span> <span class="pre">=</span> <span class="pre">['y']</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">ymin</span> <span class="pre">=</span> <span class="pre">0</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">legend</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfy1</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx4</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfy2</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx2</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx3</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx1</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfy3</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfy4</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">decorator</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">weight</span> <span class="pre">=</span> <span class="pre">normal</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">family</span> <span class="pre">=</span> <span class="pre">normal</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xlim</span> <span class="pre">=</span> <span class="pre">(None,</span> <span class="pre">None)</span></code></div>
+<div class="line"><a href="#id2"><span class="problematic" id="id3">``</span></a>&lt;&lt; title = ``</div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">grid_color</span> <span class="pre">=</span> <span class="pre">k</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">variant</span> <span class="pre">=</span> <span class="pre">normal</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">style</span> <span class="pre">=</span> <span class="pre">normal</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">grid_linestyle</span> <span class="pre">=</span> <span class="pre">--</span></code></div>
+<div class="line"><a href="#id4"><span class="problematic" id="id5">``</span></a>&lt;&lt; xlabel = ``</div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">grid_linewidth</span> <span class="pre">=</span> <span class="pre">0.5</span></code></div>
+<div class="line"><a href="#id6"><span class="problematic" id="id7">``</span></a>&lt;&lt; ylabel = ``</div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">grid</span> <span class="pre">=</span> <span class="pre">True</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">ylim</span> <span class="pre">=</span> <span class="pre">(None,</span> <span class="pre">None)</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">size</span> <span class="pre">=</span> <span class="pre">18</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">fig</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">fig</span></code></div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="last admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The documentation page for function parameters: <a class="reference external" href="https://matplotlib.org/users/index.html">https://matplotlib.org/users/index.html</a></p>
+<p class="last">The documentation page for function parameters:</p>
 </div>
 </td>
 </tr>
@@ -276,7 +243,7 @@
 </table>
 </div>
 <div class="section" id="hist">
-<span id="id2"></span><h1>hist<a class="headerlink" href="#hist" title="Permalink to this headline">¶</a></h1>
+<span id="id8"></span><h1>hist<a class="headerlink" href="#hist" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -287,7 +254,7 @@
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">subtask:</th><td class="field-body"><div class="first line-block">
-<div class="line">Plot</div>
+<div class="line">plot</div>
 </div>
 </td>
 </tr>
@@ -303,19 +270,7 @@
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
 <tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line"><code class="docutils literal"><span class="pre">df4</span></code> : a pandas dataframe</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
-</div>
-<div class="line"><code class="docutils literal"><span class="pre">df1</span></code> : a pandas dataframe</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
-</div>
-<div class="line"><code class="docutils literal"><span class="pre">df3</span></code> : a pandas dataframe</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
-</div>
-<div class="line"><code class="docutils literal"><span class="pre">df2</span></code> : a pandas dataframe</div>
+<div class="line"><code class="docutils literal"><span class="pre">dfx</span></code> : a pandas dataframe</div>
 <div class="line-block">
 <div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
 </div>
@@ -344,29 +299,199 @@
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">hist</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">rwidth</span> <span class="pre">=</span> <span class="pre">1</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">nbins</span> <span class="pre">=</span> <span class="pre">required_required</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">bestfit</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">isformatter</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">color</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">kwargs</span> <span class="pre">=</span> <span class="pre">{}</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">title</span> <span class="pre">=</span> <span class="pre">Histogram</span></code></div>
-<div class="line"><a href="#id3"><span class="problematic" id="id4">``</span></a>&lt;&lt; formatter_type = ``</div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xlabel</span> <span class="pre">=</span> <span class="pre">x</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xmax</span> <span class="pre">=</span> <span class="pre">0</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">ylabel</span> <span class="pre">=</span> <span class="pre">y</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xmin</span> <span class="pre">=</span> <span class="pre">0</span></code></div>
-<div class="line"><a href="#id5"><span class="problematic" id="id6">``</span></a>&lt;&lt; lineshapecolor = ``</div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">df4</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">df1</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">df3</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">df2</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">x</span> <span class="pre">=</span> <span class="pre">required_required</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">bins</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">fig</span></code></div>
 <div class="line"><br /></div>
 </div>
 </div>
 <div class="last admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The documentation page for function parameters: <a class="reference external" href="https://matplotlib.org/users/index.html">https://matplotlib.org/users/index.html</a></p>
+<p class="last">The documentation page for function parameters:</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="scatter2d">
+<span id="id9"></span><h1>scatter2D<a class="headerlink" href="#scatter2d" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">task:</th><td class="field-body"><div class="first line-block">
+<div class="line">Visualize</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">subtask:</th><td class="field-body"><div class="first line-block">
+<div class="line">plot</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">host:</th><td class="field-body"><div class="first line-block">
+<div class="line">cheml</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">function:</th><td class="field-body"><div class="first line-block">
+<div class="line">scatter2D</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">dfy</span></code> : a pandas dataframe</div>
+<div class="line-block">
+<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+</div>
+<div class="line"><code class="docutils literal"><span class="pre">dfx</span></code> : a pandas dataframe</div>
+<div class="line-block">
+<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">fig</span></code> : a matplotlib.Figure object</div>
+<div class="line-block">
+<div class="line">types: (&#8220;&lt;class &#8216;matplotlib.figure.Figure&#8217;&gt;&#8221;,)</div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<div class="line">ChemML, 0.4.1</div>
+<div class="line">pandas, 0.20.3</div>
+<div class="line">matplotlib, 1.5.1</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">scatter2D</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">color</span> <span class="pre">=</span> <span class="pre">b</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">marker</span> <span class="pre">=</span> <span class="pre">.</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">required_required</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">x</span> <span class="pre">=</span> <span class="pre">required_required</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">linewidth</span> <span class="pre">=</span> <span class="pre">2</span></code></div>
+<div class="line"><a href="#id10"><span class="problematic" id="id11">``</span></a>&lt;&lt; linestyle = ``</div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfy</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">fig</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The documentation page for function parameters:</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="plot">
+<span id="id12"></span><h1>plot<a class="headerlink" href="#plot" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">task:</th><td class="field-body"><div class="first line-block">
+<div class="line">Visualize</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">subtask:</th><td class="field-body"><div class="first line-block">
+<div class="line">plot</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">host:</th><td class="field-body"><div class="first line-block">
+<div class="line">pandas</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">function:</th><td class="field-body"><div class="first line-block">
+<div class="line">plot</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
+<div class="line-block">
+<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">axes</span></code> : matplotlib axes object</div>
+<div class="line-block">
+<div class="line">types: (&#8220;&lt;class &#8216;matplotlib.axes._subplots.AxesSubplot&#8217;&gt;&#8221;,)</div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<div class="line">pandas, 0.20.3</div>
+<div class="line">matplotlib, 1.5.1</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">pandas</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">plot</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xlim</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xerr</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">yerr</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">logx</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">logy</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">table</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">ax</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">rot</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">ylim</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">style</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">sharey</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">sharex</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">title</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">use_index</span> <span class="pre">=</span> <span class="pre">True</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">xticks</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">fontsize</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">sort_columns</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">loglog</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">colormap</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">grid</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">layout</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">legend</span> <span class="pre">=</span> <span class="pre">True</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">secondary_y</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">kind</span> <span class="pre">=</span> <span class="pre">line</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">subplots</span> <span class="pre">=</span> <span class="pre">False</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">figsize</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">yticks</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">x</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">df</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">axes</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The documentation page for function parameters: <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html">https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html</a></p>
 </div>
 </td>
 </tr>
@@ -381,7 +506,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="include_CMLWR8Store.html" class="btn btn-neutral float-right" title="SaveFigure" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="include_CMLWR8Store.html" class="btn btn-neutral float-right" title="SaveFile" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="include_CMLWR6Mix.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>hist &mdash; ChemML 0.4.1 documentation</title>
+  <title>scatter2D &mdash; ChemML 0.4.1 documentation</title>
   
 
   
@@ -122,11 +122,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>hist</li>
+    <li>scatter2D</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/wrapper_docs/cheml.hist.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/wrapper_docs/cheml.scatter2D.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -136,8 +136,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="hist">
-<span id="id1"></span><h1>hist<a class="headerlink" href="#hist" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="scatter2d">
+<span id="id1"></span><h1>scatter2D<a class="headerlink" href="#scatter2d" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -158,12 +158,16 @@
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">function:</th><td class="field-body"><div class="first line-block">
-<div class="line">hist</div>
+<div class="line">scatter2D</div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
 <tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">dfy</span></code> : a pandas dataframe</div>
+<div class="line-block">
+<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+</div>
 <div class="line"><code class="docutils literal"><span class="pre">dfx</span></code> : a pandas dataframe</div>
 <div class="line-block">
 <div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
@@ -173,7 +177,7 @@
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
 <tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line"><code class="docutils literal"><span class="pre">fig</span></code> : a matplotlib object</div>
+<div class="line"><code class="docutils literal"><span class="pre">fig</span></code> : a matplotlib.Figure object</div>
 <div class="line-block">
 <div class="line">types: (&#8220;&lt;class &#8216;matplotlib.figure.Figure&#8217;&gt;&#8221;,)</div>
 </div>
@@ -192,11 +196,14 @@
 <tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">hist</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">color</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">kwargs</span> <span class="pre">=</span> <span class="pre">{}</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">scatter2D</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">color</span> <span class="pre">=</span> <span class="pre">b</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">marker</span> <span class="pre">=</span> <span class="pre">.</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">y</span> <span class="pre">=</span> <span class="pre">required_required</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">x</span> <span class="pre">=</span> <span class="pre">required_required</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">bins</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">linewidth</span> <span class="pre">=</span> <span class="pre">2</span></code></div>
+<div class="line"><a href="#id2"><span class="problematic" id="id3">``</span></a>&lt;&lt; linestyle = ``</div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfy</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">dfx</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">fig</span></code></div>
 <div class="line"><br /></div>

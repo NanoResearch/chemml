@@ -196,17 +196,21 @@ The photovaltaic candidates are provided using SMILES representation.</p>
 </tbody>
 </table>
 <dl class="docutils">
-<dt>data</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">two dataframes</span><dd>first dataframe for SMILES representation of molecules, shape: (500,1)
-second dataframe for HOMO energies of the molecules (eV), shape: (500,1)</dd>
+<dt>returns two dataframes</dt>
+<dd><ul class="first last simple">
+<li>first dataframe for SMILES representation of molecules, shape: (500,1)</li>
+<li>second dataframe for HOMO energies of the molecules (eV), shape: (500,1)</li>
+</ul>
+</dd>
 </dl>
-<p>Let&#8217;s say you want to know the header and shape of the dataframe.
-&gt;&gt;&gt; from cheml.datasets import load_cep_homo
-&gt;&gt;&gt; smi, homo  = load_cep_homo()
-&gt;&gt;&gt; print list(smi.columns)
-[&#8216;smiles&#8217;]
-&gt;&gt;&gt; print homo.shape
-(500, 1)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cheml.datasets</span> <span class="k">import</span> <span class="n">load_cep_homo</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">smi</span><span class="p">,</span> <span class="n">homo</span>  <span class="o">=</span> <span class="n">load_cep_homo</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="nb">list</span><span class="p">(</span><span class="n">smi</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="go">[&#39;smiles&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">homo</span><span class="o">.</span><span class="n">shape</span>
+<span class="go">(500, 1)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="function">
@@ -240,18 +244,22 @@ second dataframe for HOMO energies of the molecules (eV), shape: (500,1)</dd>
 </tbody>
 </table>
 <dl class="docutils">
-<dt>data</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">three dataframes</span><dd>first dataframe for SMILES representation of molecules, shape: (500,1)
-second dataframe for the density of molecules (Kg/m3), shape: (500,1)
-third dataframe for the molecular descriptors of molecules, shape: (500,1)</dd>
+<dt>returns three dataframes</dt>
+<dd><ul class="first last simple">
+<li>first dataframe for SMILES representation of molecules, shape: (500,1)</li>
+<li>second dataframe for the density of molecules (Kg/m3), shape: (500,1)</li>
+<li>third dataframe for the molecular descriptors of molecules, shape: (500,1)</li>
+</ul>
+</dd>
 </dl>
-<p>Let&#8217;s say you want to know the header and shape of the dataframe.
-&gt;&gt;&gt; from cheml.datasets import load_organic_density
-&gt;&gt;&gt; smi, density, features = load_organic_density()
-&gt;&gt;&gt; print list(smi.columns)
-[&#8216;smiles&#8217;]
-&gt;&gt;&gt; print features.shape
-(500, 200)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cheml.datasets</span> <span class="k">import</span> <span class="n">load_organic_density</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">smi</span><span class="p">,</span> <span class="n">density</span><span class="p">,</span> <span class="n">features</span> <span class="o">=</span> <span class="n">load_organic_density</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="nb">list</span><span class="p">(</span><span class="n">smi</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
+<span class="go">[&#39;smiles&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">features</span><span class="o">.</span><span class="n">shape</span>
+<span class="go">(500, 200)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="function">
@@ -287,10 +295,12 @@ Polarizability of the molecules are also calcualted in the same level of thoery.
 </tbody>
 </table>
 <dl class="docutils">
-<dt>dictionary</dt>
-<dd>the xyz coordinates and atomic numbers of each atom of the molecule will be in a numpy array.</dd>
-<dt>dataframe</dt>
-<dd>the polarizability of each molecule</dd>
+<dt>returns a dictionary and a dataframe</dt>
+<dd><ul class="first last simple">
+<li>dictionary: the xyz coordinates and atomic numbers of each atom of the molecule will be in a numpy array.</li>
+<li>dataframe: the polarizability of each molecule</li>
+</ul>
+</dd>
 </dl>
 </dd></dl>
 
