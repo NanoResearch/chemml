@@ -154,7 +154,7 @@
   <div class="section" id="cheml-chem-module">
 <h1>cheml.chem module<a class="headerlink" href="#cheml-chem-module" title="Permalink to this headline">¶</a></h1>
 <span class="target" id="module-cheml.chem"></span><dl class="docutils">
-<dt>The cheml.chem module includes:</dt>
+<dt>The cheml.chem module includes (please click on links adjacent to function names for more information):</dt>
 <dd><ul class="first last simple">
 <li>CoulombMatrix: <a class="reference internal" href="#cheml.chem.CoulombMatrix" title="cheml.chem.CoulombMatrix"><code class="xref py py-func docutils literal"><span class="pre">CoulombMatrix()</span></code></a></li>
 <li>BagofBonds: <a class="reference internal" href="#cheml.chem.BagofBonds" title="cheml.chem.BagofBonds"><code class="xref py py-func docutils literal"><span class="pre">BagofBonds()</span></code></a></li>
@@ -418,15 +418,20 @@ To select descriptors one by one based on descriptor names, use Script Wizard in
 <dt>external: boolean, optional (default=False)</dt>
 <dd>If True, include external variables at the end of each saved file.</dd>
 </dl>
-<dl class="docutils">
+<blockquote>
+<div><dl class="docutils">
 <dt>The documentation for the rest of parameters can be found in the following links:</dt>
-<dd><a class="reference external" href="http://www.talete.mi.it/help/dragon_help/index.html">http://www.talete.mi.it/help/dragon_help/index.html</a>
-<a class="reference external" href="https://chm.kode-solutions.net/products_dragon_tutorial.php">https://chm.kode-solutions.net/products_dragon_tutorial.php</a></dd>
-<dt>In the current version, we recommend the user to use this class with the following parameters:</dt>
-<dd>molInput = &#8216;file&#8217;
-molfile = path to one SMILES representation file with .smi format or a dictionary of other formats
-script = &#8216;new&#8217;</dd>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="http://www.talete.mi.it/help/dragon_help/index.html">http://www.talete.mi.it/help/dragon_help/index.html</a></li>
+<li><a class="reference external" href="https://chm.kode-solutions.net/products_dragon_tutorial.php">https://chm.kode-solutions.net/products_dragon_tutorial.php</a></li>
+</ul>
+</dd>
 </dl>
+<p>In the current version, we recommend the user to use this class with the following parameters:
+molInput = &#8216;file&#8217;
+molfile = path to one SMILES representation file with .smi format or a dictionary of other formats
+script = &#8216;new&#8217;</p>
+</div></blockquote>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cheml.chem</span> <span class="k">import</span> <span class="n">Dragon</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">drg</span> <span class="o">=</span> <span class="n">Dragon</span><span class="p">(</span><span class="o">**</span><span class="n">parameters</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">drg</span><span class="o">.</span><span class="n">script_wizard</span><span class="p">(</span><span class="n">script</span><span class="p">,</span> <span class="n">output_directory</span><span class="p">)</span>

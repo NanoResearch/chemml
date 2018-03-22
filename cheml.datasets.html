@@ -154,11 +154,13 @@
   <div class="section" id="cheml-datasets-module">
 <h1>cheml.datasets module<a class="headerlink" href="#cheml-datasets-module" title="Permalink to this headline">¶</a></h1>
 <span class="target" id="module-cheml.datasets"></span><dl class="docutils">
-<dt>The cheml.datasets module includes:</dt>
+<dt>The cheml.datasets module includes (please click on links adjacent to function names for more information):</dt>
 <dd><ul class="first last simple">
 <li>load_cep_homo: <a class="reference internal" href="#cheml.datasets.load_cep_homo" title="cheml.datasets.load_cep_homo"><code class="xref py py-func docutils literal"><span class="pre">load_cep_homo()</span></code></a></li>
 <li>load_organic_density: <a class="reference internal" href="#cheml.datasets.load_organic_density" title="cheml.datasets.load_organic_density"><code class="xref py py-func docutils literal"><span class="pre">load_organic_density()</span></code></a></li>
 <li>load_xyz_polarizability: <a class="reference internal" href="#cheml.datasets.load_xyz_polarizability" title="cheml.datasets.load_xyz_polarizability"><code class="xref py py-func docutils literal"><span class="pre">load_xyz_polarizability()</span></code></a></li>
+<li>load_comp_energy: <a class="reference internal" href="#cheml.datasets.load_comp_energy" title="cheml.datasets.load_comp_energy"><code class="xref py py-func docutils literal"><span class="pre">load_comp_energy()</span></code></a></li>
+<li>load_crystal_structures: <a class="reference internal" href="#cheml.datasets.load_crystal_structures" title="cheml.datasets.load_crystal_structures"><code class="xref py py-func docutils literal"><span class="pre">load_crystal_structures()</span></code></a></li>
 </ul>
 </dd>
 </dl>
@@ -265,7 +267,7 @@ The photovaltaic candidates are provided using SMILES representation.</p>
 <dl class="function">
 <dt id="cheml.datasets.load_xyz_polarizability">
 <code class="descclassname">cheml.datasets.</code><code class="descname">load_xyz_polarizability</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cheml.datasets.load_xyz_polarizability" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load and return xyz files and polarizability (Bohr^3)
+<dd><p>Load and return xyz files and polarizability (Bohr^3).
 The xyz coordinates of small organic molecules are optimized with BP86/def2svp level of theory.
 Polarizability of the molecules are also calcualted in the same level of thoery.</p>
 <table border="1" class="docutils">
@@ -299,6 +301,81 @@ Polarizability of the molecules are also calcualted in the same level of thoery.
 <dd><ul class="first last simple">
 <li>dictionary: the xyz coordinates and atomic numbers of each atom of the molecule will be in a numpy array.</li>
 <li>dataframe: the polarizability of each molecule</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="cheml.datasets.load_comp_energy">
+<code class="descclassname">cheml.datasets.</code><code class="descname">load_comp_energy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cheml.datasets.load_comp_energy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load and return composition entries and formation energies (eV).
+From Magpie <a class="reference external" href="https://bitbucket.org/wolverton/magpie">https://bitbucket.org/wolverton/magpie</a></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>rows</td>
+<td>630</td>
+</tr>
+<tr class="row-even"><td>header</td>
+<td>formation_energy</td>
+</tr>
+<tr class="row-odd"><td>molecules rep.</td>
+<td>composition</td>
+</tr>
+<tr class="row-even"><td>Features</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td>Returns</td>
+<td>1 dataframe and 1 list</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>returns a list and a dataframe</dt>
+<dd><ul class="first last simple">
+<li>list: the list of composition entries from CompositionEntry class.</li>
+<li>dataframe: the formation energy for each composition.</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="cheml.datasets.load_crystal_structures">
+<code class="descclassname">cheml.datasets.</code><code class="descname">load_crystal_structures</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#cheml.datasets.load_crystal_structures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load and return crystal structure entries.
+From Magpie <a class="reference external" href="https://bitbucket.org/wolverton/magpie">https://bitbucket.org/wolverton/magpie</a></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>length</td>
+<td>18</td>
+</tr>
+<tr class="row-even"><td>header</td>
+<td>formation_energy</td>
+</tr>
+<tr class="row-odd"><td>molecules rep.</td>
+<td>composition</td>
+</tr>
+<tr class="row-even"><td>Features</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td>Returns</td>
+<td>1 list</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>returns a list</dt>
+<dd><ul class="first last simple">
+<li>list: the list of crystal structure entries from CrystalStructureEntry class.</li>
 </ul>
 </dd>
 </dl>
