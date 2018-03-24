@@ -26,9 +26,9 @@ scorer_regression
     | ``track_header`` : Boolean, (default:True)
     |   if True, the input dataframe's header will be transformed to the output dataframe
     |   choose one of: (True, False)
-    | ``metric`` : string: 'mae', 'mse', 'rmse', 'r2', (default:mae)
+    | ``metric`` : string: 'mae', 'mse', 'r2', (default:mae)
     |   http://scikit-learn.org/dev/modules/model_evaluation.html#regression-metrics
-    |   choose one of: ('mae', 'mse', 'rmse', 'r2')
+    |   choose one of: ('mae', 'mse', 'r2')
 
 :required packages:
     | scikit-learn, 0.19.0

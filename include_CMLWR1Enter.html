@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ConvertFile &mdash; ChemML 0.4.1 documentation</title>
+  <title>ConvertFile &mdash; ChemML 0.4.2 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ChemML 0.4.1 documentation" href="index.html"/>
+    <link rel="top" title="ChemML 0.4.2 documentation" href="index.html"/>
         <link rel="up" title="Wrapper Reference" href="CMLWReference.html"/>
         <link rel="next" title="APEAttributeGenerator" href="include_CMLWR2Represent.html"/>
         <link rel="prev" title="Wrapper Reference" href="CMLWReference.html"/> 
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                0.4.1
+                0.4.2
               </div>
             
           
@@ -96,6 +96,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#pyscript">PyScript</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xyzreader">XYZreader</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#load-cep-homo">load_cep_homo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-comp-energy">load_comp_energy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-crystal-structures">load_crystal_structures</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#load-organic-density">load_organic_density</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#load-xyz-polarizability">load_xyz_polarizability</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#read-excel">read_excel</a></li>
@@ -188,32 +190,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">file_path</span></code> : the path to the file that needs to be converted</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;str&#8217;&gt;&#8221;, &#8220;&lt;type &#8216;dict&#8217;&gt;&#8221;)</div>
+<div class="line">types: (“&lt;type ‘str’&gt;”, “&lt;type ‘dict’&gt;”)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">converted_file_paths</span></code> : list of paths to the converted files</div>
 <div class="line-block">
-<div class="line">types: &lt;type &#8216;list&#8217;&gt;</div>
+<div class="line">types: &lt;type ‘list’&gt;</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">Babel, 2.3.4</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">ConvertFile</span></code></div>
@@ -261,7 +263,7 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">iv4</span></code> : input variable, of any format</div>
 <div class="line-block">
 <div class="line">types: ()</div>
@@ -290,7 +292,7 @@
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">ov2</span></code> : output variable, of any format</div>
 <div class="line-block">
 <div class="line">types: ()</div>
@@ -319,14 +321,14 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">PyScript</span></code></div>
@@ -401,28 +403,28 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line">this block doesn&#8217;t receive anything</div>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">this block doesn’t receive anything</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line"><code class="docutils literal"><span class="pre">molecules</span></code> : dictionary of molecules with [&#8216;mol&#8217;, &#8216;file&#8217;] keys</div>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">molecules</span></code> : dictionary of molecules with [‘mol’, ‘file’] keys</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;dict&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘dict’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">XYZreader</span></code></div>
@@ -471,33 +473,33 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line">this block doesn&#8217;t receive anything</div>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">this block doesn’t receive anything</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">smiles</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 <div class="line"><code class="docutils literal"><span class="pre">homo</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">load_cep_homo</span></code></div>
@@ -515,8 +517,145 @@
 </tbody>
 </table>
 </div>
+<div class="section" id="load-comp-energy">
+<span id="id5"></span><h1>load_comp_energy<a class="headerlink" href="#load-comp-energy" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">task:</th><td class="field-body"><div class="first line-block">
+<div class="line">Enter</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">subtask:</th><td class="field-body"><div class="first line-block">
+<div class="line">datasets</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">host:</th><td class="field-body"><div class="first line-block">
+<div class="line">cheml</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">function:</th><td class="field-body"><div class="first line-block">
+<div class="line">load_comp_energy</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">this block doesn’t receive anything</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">formation_energy</span></code> : pandas dataframe</div>
+<div class="line-block">
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
+</div>
+<div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
+<div class="line-block">
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">ChemML, 0.4.1</div>
+<div class="line">pandas, 0.20.3</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">load_comp_energy</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">formation_energy</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">entries</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The documentation page for function parameters:</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="load-crystal-structures">
+<span id="id6"></span><h1>load_crystal_structures<a class="headerlink" href="#load-crystal-structures" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">task:</th><td class="field-body"><div class="first line-block">
+<div class="line">Enter</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">subtask:</th><td class="field-body"><div class="first line-block">
+<div class="line">datasets</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">host:</th><td class="field-body"><div class="first line-block">
+<div class="line">cheml</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">function:</th><td class="field-body"><div class="first line-block">
+<div class="line">load_crystal_structures</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">this block doesn’t receive anything</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
+<div class="line-block">
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">ChemML, 0.4.1</div>
+<div class="line">pandas, 0.20.3</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">load_crystal_structures</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">entries</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The documentation page for function parameters:</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="load-organic-density">
-<span id="id5"></span><h1>load_organic_density<a class="headerlink" href="#load-organic-density" title="Permalink to this headline">¶</a></h1>
+<span id="id7"></span><h1>load_organic_density<a class="headerlink" href="#load-organic-density" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -542,37 +681,37 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line">this block doesn&#8217;t receive anything</div>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">this block doesn’t receive anything</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">smiles</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 <div class="line"><code class="docutils literal"><span class="pre">features</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 <div class="line"><code class="docutils literal"><span class="pre">density</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">load_organic_density</span></code></div>
@@ -592,7 +731,7 @@
 </table>
 </div>
 <div class="section" id="load-xyz-polarizability">
-<span id="id6"></span><h1>load_xyz_polarizability<a class="headerlink" href="#load-xyz-polarizability" title="Permalink to this headline">¶</a></h1>
+<span id="id8"></span><h1>load_xyz_polarizability<a class="headerlink" href="#load-xyz-polarizability" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -618,38 +757,38 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line">this block doesn&#8217;t receive anything</div>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">this block doesn’t receive anything</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line"><code class="docutils literal"><span class="pre">density</span></code> : pandas dataframe</div>
-<div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
-</div>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">coordinates</span></code> : dictionary of molecules represented by their xyz coordinates and atomic numbers</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;dict&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘dict’&gt;”,)</div>
+</div>
+<div class="line"><code class="docutils literal"><span class="pre">polarizability</span></code> : pandas dataframe</div>
+<div class="line-block">
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">load_xyz_polarizability</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">density</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">coordinates</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">polarizability</span></code></div>
 <div class="line"><br /></div>
 </div>
 </div>
@@ -663,7 +802,7 @@
 </table>
 </div>
 <div class="section" id="read-excel">
-<span id="id7"></span><h1>read_excel<a class="headerlink" href="#read-excel" title="Permalink to this headline">¶</a></h1>
+<span id="id9"></span><h1>read_excel<a class="headerlink" href="#read-excel" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -689,28 +828,28 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line">this block doesn&#8217;t receive anything</div>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">this block doesn’t receive anything</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">pandas</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">read_excel</span></code></div>
@@ -747,7 +886,7 @@
 </table>
 </div>
 <div class="section" id="read-table">
-<span id="id8"></span><h1>read_table<a class="headerlink" href="#read-table" title="Permalink to this headline">¶</a></h1>
+<span id="id10"></span><h1>read_table<a class="headerlink" href="#read-table" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -773,28 +912,28 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line">this block doesn&#8217;t receive anything</div>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">this block doesn’t receive anything</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">pandas</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">read_table</span></code></div>
@@ -885,7 +1024,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Mojtaba Haghighatlari.
+        &copy; Copyright 2016, Mojtaba Haghighatlari and Hachmann lab.
 
     </p>
   </div>
@@ -907,7 +1046,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.4.1',
+            VERSION:'0.4.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

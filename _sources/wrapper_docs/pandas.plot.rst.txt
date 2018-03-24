@@ -20,8 +20,8 @@ plot
     |   types: ("<class 'pandas.core.frame.DataFrame'>",)
 
 :output tokens (senders):
-    | ``axes`` : matplotlib axes object
-    |   types: ("<class 'matplotlib.axes._subplots.AxesSubplot'>",)
+    | ``fig`` : matplotlib figure or axes object
+    |   types: ("<class 'matplotlib.axes._subplots.AxesSubplot'>", "<class 'matplotlib.figure.Figure'>")
 
 
 :required packages:
@@ -61,6 +61,6 @@ plot
     |   ``<< y = None``
     |   ``<< x = None``
     |   ``>> id df``
-    |   ``>> id axes``
+    |   ``>> id fig``
     |
     .. note:: The documentation page for function parameters: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html

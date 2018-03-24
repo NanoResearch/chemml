@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>APEAttributeGenerator &mdash; ChemML 0.4.1 documentation</title>
+  <title>APEAttributeGenerator &mdash; ChemML 0.4.2 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ChemML 0.4.1 documentation" href="index.html"/>
+    <link rel="top" title="ChemML 0.4.2 documentation" href="index.html"/>
         <link rel="up" title="Wrapper Reference" href="CMLWReference.html"/>
         <link rel="next" title="ConstantColumns" href="include_CMLWR3Prepare.html"/>
         <link rel="prev" title="ConvertFile" href="include_CMLWR1Enter.html"/> 
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                0.4.1
+                0.4.2
               </div>
             
           
@@ -98,9 +98,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#bagofbonds">BagofBonds</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#chargedependentattributegenerator">ChargeDependentAttributeGenerator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#chemicalorderingattributegenerator">ChemicalOrderingAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#compositionentry">CompositionEntry</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#coordinationnumberattributegenerator">CoordinationNumberAttributeGenerator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#coulombmatrix">CoulombMatrix</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#coulombmatrixattributegenerator">CoulombMatrixAttributeGenerator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#crystalstructureentry">CrystalStructureEntry</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#distancematrix">DistanceMatrix</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dragon">Dragon</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#effectivecoordinationnumberattributegenerator">EffectiveCoordinationNumberAttributeGenerator</a></li>
@@ -208,32 +210,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">APEAttributeGenerator</span></code></div>
@@ -281,32 +283,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">APRDFAttributeGenerator</span></code></div>
@@ -355,32 +357,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">molecules</span></code> : the molecule numpy array or data frame</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;, &#8220;&lt;type &#8216;numpy.ndarray&#8217;&gt;&#8221;, &#8220;&lt;type &#8216;dict&#8217;&gt;&#8221;)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”, “&lt;type ‘numpy.ndarray’&gt;”, “&lt;type ‘dict’&gt;”)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">BagofBonds</span></code></div>
@@ -426,32 +428,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">ChargeDependentAttributeGenerator</span></code></div>
@@ -496,32 +498,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">ChemicalOrderingAttributeGenerator</span></code></div>
@@ -541,8 +543,75 @@
 </tbody>
 </table>
 </div>
+<div class="section" id="compositionentry">
+<span id="id6"></span><h1>CompositionEntry<a class="headerlink" href="#compositionentry" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">task:</th><td class="field-body"><div class="first line-block">
+<div class="line">Represent</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">subtask:</th><td class="field-body"><div class="first line-block">
+<div class="line">inorganic input</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">host:</th><td class="field-body"><div class="first line-block">
+<div class="line">cheml</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">function:</th><td class="field-body"><div class="first line-block">
+<div class="line">CompositionEntry</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">this block doesn’t receive anything</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
+<div class="line-block">
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">ChemML, 0.4.1</div>
+<div class="line">pandas, 0.20.3</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">CompositionEntry</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">filepath</span> <span class="pre">=</span> <span class="pre">required_required</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">entries</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The documentation page for function parameters:</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="coordinationnumberattributegenerator">
-<span id="id6"></span><h1>CoordinationNumberAttributeGenerator<a class="headerlink" href="#coordinationnumberattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id7"></span><h1>CoordinationNumberAttributeGenerator<a class="headerlink" href="#coordinationnumberattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -568,32 +637,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">CoordinationNumberAttributeGenerator</span></code></div>
@@ -612,7 +681,7 @@
 </table>
 </div>
 <div class="section" id="coulombmatrix">
-<span id="id7"></span><h1>CoulombMatrix<a class="headerlink" href="#coulombmatrix" title="Permalink to this headline">¶</a></h1>
+<span id="id8"></span><h1>CoulombMatrix<a class="headerlink" href="#coulombmatrix" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -638,32 +707,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">molecules</span></code> : the molecule numpy array or data frame</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;, &#8220;&lt;type &#8216;numpy.ndarray&#8217;&gt;&#8221;, &#8220;&lt;type &#8216;dict&#8217;&gt;&#8221;)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”, “&lt;type ‘numpy.ndarray’&gt;”, “&lt;type ‘dict’&gt;”)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">CoulombMatrix</span></code></div>
@@ -686,7 +755,7 @@
 </table>
 </div>
 <div class="section" id="coulombmatrixattributegenerator">
-<span id="id8"></span><h1>CoulombMatrixAttributeGenerator<a class="headerlink" href="#coulombmatrixattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id9"></span><h1>CoulombMatrixAttributeGenerator<a class="headerlink" href="#coulombmatrixattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -712,32 +781,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">CoulombMatrixAttributeGenerator</span></code></div>
@@ -756,8 +825,75 @@
 </tbody>
 </table>
 </div>
+<div class="section" id="crystalstructureentry">
+<span id="id10"></span><h1>CrystalStructureEntry<a class="headerlink" href="#crystalstructureentry" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">task:</th><td class="field-body"><div class="first line-block">
+<div class="line">Represent</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">subtask:</th><td class="field-body"><div class="first line-block">
+<div class="line">inorganic input</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">host:</th><td class="field-body"><div class="first line-block">
+<div class="line">cheml</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">function:</th><td class="field-body"><div class="first line-block">
+<div class="line">CrystalStructureEntry</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">this block doesn’t receive anything</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
+<div class="line-block">
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line">ChemML, 0.4.1</div>
+<div class="line">pandas, 0.20.3</div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
+<div class="line-block">
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">CrystalStructureEntry</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">directory_path</span> <span class="pre">=</span> <span class="pre">required_required</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">entries</span></code></div>
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="last admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The documentation page for function parameters:</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="distancematrix">
-<span id="id9"></span><h1>DistanceMatrix<a class="headerlink" href="#distancematrix" title="Permalink to this headline">¶</a></h1>
+<span id="id11"></span><h1>DistanceMatrix<a class="headerlink" href="#distancematrix" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -783,32 +919,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">DistanceMatrix</span></code></div>
@@ -829,7 +965,7 @@
 </table>
 </div>
 <div class="section" id="dragon">
-<span id="id10"></span><h1>Dragon<a class="headerlink" href="#dragon" title="Permalink to this headline">¶</a></h1>
+<span id="id12"></span><h1>Dragon<a class="headerlink" href="#dragon" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -855,25 +991,25 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">molfile</span></code> : the molecule file path</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;str&#8217;&gt;&#8221;, &#8220;&lt;type &#8216;dict&#8217;&gt;&#8221;, &#8220;&lt;type &#8216;list&#8217;&gt;&#8221;)</div>
+<div class="line">types: (“&lt;type ‘str’&gt;”, “&lt;type ‘dict’&gt;”, “&lt;type ‘list’&gt;”)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">wrapper parameters:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">script</span></code> : , (default:new)</div>
 <div class="line"><br /></div>
 <div class="line-block">
@@ -883,7 +1019,7 @@
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 <div class="line">Dragon, 7 or 6</div>
@@ -892,7 +1028,7 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">Dragon</span></code></div>
@@ -971,7 +1107,7 @@
 </table>
 </div>
 <div class="section" id="effectivecoordinationnumberattributegenerator">
-<span id="id11"></span><h1>EffectiveCoordinationNumberAttributeGenerator<a class="headerlink" href="#effectivecoordinationnumberattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id13"></span><h1>EffectiveCoordinationNumberAttributeGenerator<a class="headerlink" href="#effectivecoordinationnumberattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -997,32 +1133,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">EffectiveCoordinationNumberAttributeGenerator</span></code></div>
@@ -1041,7 +1177,7 @@
 </table>
 </div>
 <div class="section" id="elementfractionattributegenerator">
-<span id="id12"></span><h1>ElementFractionAttributeGenerator<a class="headerlink" href="#elementfractionattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id14"></span><h1>ElementFractionAttributeGenerator<a class="headerlink" href="#elementfractionattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1067,32 +1203,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">ElementFractionAttributeGenerator</span></code></div>
@@ -1111,7 +1247,7 @@
 </table>
 </div>
 <div class="section" id="elementpairpropertyattributegenerator">
-<span id="id13"></span><h1>ElementPairPropertyAttributeGenerator<a class="headerlink" href="#elementpairpropertyattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id15"></span><h1>ElementPairPropertyAttributeGenerator<a class="headerlink" href="#elementpairpropertyattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1137,32 +1273,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">ElementPairPropertyAttributeGenerator</span></code></div>
@@ -1182,7 +1318,7 @@
 </table>
 </div>
 <div class="section" id="elementalpropertyattributegenerator">
-<span id="id14"></span><h1>ElementalPropertyAttributeGenerator<a class="headerlink" href="#elementalpropertyattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id16"></span><h1>ElementalPropertyAttributeGenerator<a class="headerlink" href="#elementalpropertyattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1208,26 +1344,26 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">wrapper parameters:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
-<div class="line"><code class="docutils literal"><span class="pre">use_default_properties</span></code> : , (default:None)</div>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">elemental_properties</span></code> : , (default:None)</div>
 <div class="line"><br /></div>
 <div class="line-block">
 <div class="line">choose one of: []</div>
@@ -1236,19 +1372,19 @@
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">ElementalPropertyAttributeGenerator</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">use_default_properties</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">elemental_properties</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">use_default_properties</span> <span class="pre">=</span> <span class="pre">True</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">entries</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">df</span></code></div>
 <div class="line"><br /></div>
@@ -1264,7 +1400,7 @@
 </table>
 </div>
 <div class="section" id="gclpattributegenerator">
-<span id="id15"></span><h1>GCLPAttributeGenerator<a class="headerlink" href="#gclpattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id17"></span><h1>GCLPAttributeGenerator<a class="headerlink" href="#gclpattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1290,38 +1426,48 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
+<div class="line"><code class="docutils literal"><span class="pre">energies</span></code> : to be passed to the parameter energies</div>
+<div class="line-block">
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
+</div>
+<div class="line"><code class="docutils literal"><span class="pre">phases</span></code> : to be passed to the parameter phases</div>
+<div class="line-block">
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
+</div>
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">GCLPAttributeGenerator</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">count_phases</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">energies</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
-<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">phases</span> <span class="pre">=</span> <span class="pre">None</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">energies</span> <span class="pre">=</span> <span class="pre">[]</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">phases</span> <span class="pre">=</span> <span class="pre">[]</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">energies</span></code></div>
+<div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">phases</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">entries</span></code></div>
 <div class="line"><code class="docutils literal"><span class="pre">&gt;&gt;</span> <span class="pre">id</span> <span class="pre">df</span></code></div>
 <div class="line"><br /></div>
@@ -1337,7 +1483,7 @@
 </table>
 </div>
 <div class="section" id="ioniccompoundproximityattributegenerator">
-<span id="id16"></span><h1>IonicCompoundProximityAttributeGenerator<a class="headerlink" href="#ioniccompoundproximityattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id18"></span><h1>IonicCompoundProximityAttributeGenerator<a class="headerlink" href="#ioniccompoundproximityattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1363,32 +1509,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">IonicCompoundProximityAttributeGenerator</span></code></div>
@@ -1408,7 +1554,7 @@
 </table>
 </div>
 <div class="section" id="ionicityattributegenerator">
-<span id="id17"></span><h1>IonicityAttributeGenerator<a class="headerlink" href="#ionicityattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id19"></span><h1>IonicityAttributeGenerator<a class="headerlink" href="#ionicityattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1434,32 +1580,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">IonicityAttributeGenerator</span></code></div>
@@ -1478,7 +1624,7 @@
 </table>
 </div>
 <div class="section" id="latticesimilarityattributegenerator">
-<span id="id18"></span><h1>LatticeSimilarityAttributeGenerator<a class="headerlink" href="#latticesimilarityattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id20"></span><h1>LatticeSimilarityAttributeGenerator<a class="headerlink" href="#latticesimilarityattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1504,32 +1650,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">LatticeSimilarityAttributeGenerator</span></code></div>
@@ -1548,7 +1694,7 @@
 </table>
 </div>
 <div class="section" id="localpropertydifferenceattributegenerator">
-<span id="id19"></span><h1>LocalPropertyDifferenceAttributeGenerator<a class="headerlink" href="#localpropertydifferenceattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id21"></span><h1>LocalPropertyDifferenceAttributeGenerator<a class="headerlink" href="#localpropertydifferenceattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1574,32 +1720,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">LocalPropertyDifferenceAttributeGenerator</span></code></div>
@@ -1620,7 +1766,7 @@
 </table>
 </div>
 <div class="section" id="localpropertyvarianceattributegenerator">
-<span id="id20"></span><h1>LocalPropertyVarianceAttributeGenerator<a class="headerlink" href="#localpropertyvarianceattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id22"></span><h1>LocalPropertyVarianceAttributeGenerator<a class="headerlink" href="#localpropertyvarianceattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1646,32 +1792,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">LocalPropertyVarianceAttributeGenerator</span></code></div>
@@ -1692,7 +1838,7 @@
 </table>
 </div>
 <div class="section" id="meredigattributegenerator">
-<span id="id21"></span><h1>MeredigAttributeGenerator<a class="headerlink" href="#meredigattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id23"></span><h1>MeredigAttributeGenerator<a class="headerlink" href="#meredigattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1718,32 +1864,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">MeredigAttributeGenerator</span></code></div>
@@ -1762,7 +1908,7 @@
 </table>
 </div>
 <div class="section" id="prdfattributegenerator">
-<span id="id22"></span><h1>PRDFAttributeGenerator<a class="headerlink" href="#prdfattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id24"></span><h1>PRDFAttributeGenerator<a class="headerlink" href="#prdfattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1788,32 +1934,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">PRDFAttributeGenerator</span></code></div>
@@ -1834,7 +1980,7 @@
 </table>
 </div>
 <div class="section" id="packingefficiencyattributegenerator">
-<span id="id23"></span><h1>PackingEfficiencyAttributeGenerator<a class="headerlink" href="#packingefficiencyattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id25"></span><h1>PackingEfficiencyAttributeGenerator<a class="headerlink" href="#packingefficiencyattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1860,32 +2006,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">PackingEfficiencyAttributeGenerator</span></code></div>
@@ -1904,7 +2050,7 @@
 </table>
 </div>
 <div class="section" id="rdkitfingerprint">
-<span id="id24"></span><h1>RDKitFingerprint<a class="headerlink" href="#rdkitfingerprint" title="Permalink to this headline">¶</a></h1>
+<span id="id26"></span><h1>RDKitFingerprint<a class="headerlink" href="#rdkitfingerprint" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1930,19 +2076,19 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">molfile</span></code> : the molecule file path</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;str&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘str’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 <div class="line"><code class="docutils literal"><span class="pre">removed_rows</span></code> : output variable, of any format</div>
 <div class="line-block">
@@ -1952,7 +2098,7 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 <div class="line">RDKit, 2016.03.1</div>
@@ -1960,7 +2106,7 @@
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">RDKitFingerprint</span></code></div>
@@ -1988,7 +2134,7 @@
 </table>
 </div>
 <div class="section" id="stoichiometricattributegenerator">
-<span id="id25"></span><h1>StoichiometricAttributeGenerator<a class="headerlink" href="#stoichiometricattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id27"></span><h1>StoichiometricAttributeGenerator<a class="headerlink" href="#stoichiometricattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -2014,25 +2160,25 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">wrapper parameters:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">use_default_norms</span></code> : , (default:None)</div>
 <div class="line"><br /></div>
 <div class="line-block">
@@ -2042,14 +2188,14 @@
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">StoichiometricAttributeGenerator</span></code></div>
@@ -2070,7 +2216,7 @@
 </table>
 </div>
 <div class="section" id="structuralheterogeneityattributegenerator">
-<span id="id26"></span><h1>StructuralHeterogeneityAttributeGenerator<a class="headerlink" href="#structuralheterogeneityattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id28"></span><h1>StructuralHeterogeneityAttributeGenerator<a class="headerlink" href="#structuralheterogeneityattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -2096,32 +2242,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CrystalStructureEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">StructuralHeterogeneityAttributeGenerator</span></code></div>
@@ -2140,7 +2286,7 @@
 </table>
 </div>
 <div class="section" id="valenceshellattributegenerator">
-<span id="id27"></span><h1>ValenceShellAttributeGenerator<a class="headerlink" href="#valenceshellattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id29"></span><h1>ValenceShellAttributeGenerator<a class="headerlink" href="#valenceshellattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -2166,32 +2312,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">ValenceShellAttributeGenerator</span></code></div>
@@ -2210,7 +2356,7 @@
 </table>
 </div>
 <div class="section" id="yangomegaattributegenerator">
-<span id="id28"></span><h1>YangOmegaAttributeGenerator<a class="headerlink" href="#yangomegaattributegenerator" title="Permalink to this headline">¶</a></h1>
+<span id="id30"></span><h1>YangOmegaAttributeGenerator<a class="headerlink" href="#yangomegaattributegenerator" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -2236,32 +2382,32 @@
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">input tokens (receivers):</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">entries</span></code> : list of entries from CompositionEntry class.</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;type &#8216;list&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;type ‘list’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">output tokens (senders):</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">df</span></code> : pandas dataframe</div>
 <div class="line-block">
-<div class="line">types: (&#8220;&lt;class &#8216;pandas.core.frame.DataFrame&#8217;&gt;&#8221;,)</div>
+<div class="line">types: (“&lt;class ‘pandas.core.frame.DataFrame’&gt;”,)</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name" colspan="2">required packages:</th></tr>
-<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line">ChemML, 0.4.1</div>
 <div class="line">pandas, 0.20.3</div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name" colspan="2">config file view:</th></tr>
-<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><div class="first line-block">
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><div class="first line-block">
 <div class="line"><code class="docutils literal"><span class="pre">##</span></code></div>
 <div class="line-block">
 <div class="line"><code class="docutils literal"><span class="pre">&lt;&lt;</span> <span class="pre">host</span> <span class="pre">=</span> <span class="pre">cheml</span>&#160;&#160;&#160; <span class="pre">&lt;&lt;</span> <span class="pre">function</span> <span class="pre">=</span> <span class="pre">YangOmegaAttributeGenerator</span></code></div>
@@ -2299,7 +2445,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Mojtaba Haghighatlari.
+        &copy; Copyright 2016, Mojtaba Haghighatlari and Hachmann lab.
 
     </p>
   </div>
@@ -2321,7 +2467,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.4.1',
+            VERSION:'0.4.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

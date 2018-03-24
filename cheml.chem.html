@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>cheml.chem module &mdash; ChemML 0.4.1 documentation</title>
+  <title>cheml.chem module &mdash; ChemML 0.4.2 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ChemML 0.4.1 documentation" href="index.html"/>
+    <link rel="top" title="ChemML 0.4.2 documentation" href="index.html"/>
         <link rel="up" title="cheml library" href="cheml.html"/>
         <link rel="next" title="cheml.chem.magpie_python module" href="cheml.chem.magpie_python.html"/>
         <link rel="prev" title="cheml library" href="cheml.html"/> 
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                0.4.1
+                0.4.2
               </div>
             
           
@@ -170,21 +170,21 @@
 <dd><p>(CoulombMatrix)
 The implementation of coulomb matrix by Matthias Rupp et al 2012, PRL (3 different representations).</p>
 <dl class="docutils">
-<dt>CMtype: string, optional (default=&#8217;SC&#8217;)</dt>
+<dt>CMtype: string, optional (default=’SC’)</dt>
 <dd><dl class="first last docutils">
 <dt>The coulomb matrix type, one of the following types:</dt>
 <dd><ul class="first last simple">
-<li>&#8216;Unsorted_Matrix&#8217; or &#8216;UM&#8217;</li>
-<li>&#8216;Unsorted_Triangular&#8217; or &#8216;UT&#8217;</li>
-<li>&#8216;Eigenspectrum&#8217; or &#8216;E&#8217;</li>
-<li>&#8216;Sorted_Coulomb&#8217; or &#8216;SC&#8217;</li>
-<li>&#8216;Random_Coulomb&#8217; or &#8216;RC&#8217;</li>
+<li>‘Unsorted_Matrix’ or ‘UM’</li>
+<li>‘Unsorted_Triangular’ or ‘UT’</li>
+<li>‘Eigenspectrum’ or ‘E’</li>
+<li>‘Sorted_Coulomb’ or ‘SC’</li>
+<li>‘Random_Coulomb’ or ‘RC’</li>
 </ul>
 </dd>
 </dl>
 </dd>
-<dt>max_n_atoms: integer or &#8216;auto&#8217;, optional (default = &#8216;auto&#8217;)</dt>
-<dd>maximum number of atoms in a molecule. if &#8216;auto&#8217; we find it based on the input molecules.</dd>
+<dt>max_n_atoms: integer or ‘auto’, optional (default = ‘auto’)</dt>
+<dd>maximum number of atoms in a molecule. if ‘auto’ we find it based on the input molecules.</dd>
 <dt>nPerm: integer, optional (default = 3)</dt>
 <dd>Number of permutation of coulomb matrix per molecule for Random_Coulomb (RC) 
 type of representation.</dd>
@@ -265,34 +265,32 @@ The four columns are nuclear charge, x-corrdinate, y-coordinate, z-coordinate fo
 <em class="property">class </em><code class="descclassname">cheml.chem.</code><code class="descname">RDKitFingerprint</code><span class="sig-paren">(</span><em>removeHs=True</em>, <em>FPtype='Morgan'</em>, <em>vector='bit'</em>, <em>nBits=1024</em>, <em>radius=2</em><span class="sig-paren">)</span><a class="headerlink" href="#cheml.chem.RDKitFingerprint" title="Permalink to this definition">¶</a></dt>
 <dd><p>An interface to RDKit fingerprints.</p>
 <dl class="docutils">
-<dt>FPtype: string, optional (default=&#8217;Morgan&#8217;)</dt>
+<dt>FPtype: string, optional (default=’Morgan’)</dt>
 <dd><dl class="first last docutils">
 <dt>Available fingerprint types:</dt>
 <dd><ul class="first last simple">
-<li>&#8216;Hashed_atom_pair&#8217; or &#8216;HAP&#8217;</li>
-<li>&#8216;Atom_pair&#8217; or &#8216;AP&#8217;</li>
-<li>&#8216;MACCS&#8217;</li>
-<li>&#8216;Morgan&#8217;</li>
-<li>&#8216;Hashed_topological_torsion&#8217; or &#8216;HTT&#8217;</li>
-<li>&#8216;Topological_torsion&#8217; or &#8216;TT&#8217;</li>
+<li>‘Hashed_atom_pair’ or ‘HAP’</li>
+<li>‘Atom_pair’ or ‘AP’</li>
+<li>‘MACCS’</li>
+<li>‘Morgan’</li>
+<li>‘Hashed_topological_torsion’ or ‘HTT’</li>
+<li>‘Topological_torsion’ or ‘TT’</li>
 </ul>
 </dd>
 </dl>
 </dd>
-<dt>vector: string, optional (default = &#8216;bit&#8217;)</dt>
+<dt>vector: string, optional (default = ‘bit’)</dt>
 <dd><dl class="first last docutils">
 <dt>Available options for vector:</dt>
-<dd><ul class="first last">
+<dd><ul class="first last simple">
 <li><dl class="first docutils">
-<dt>&#8216;int&#8217;</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">including counts for each bit instead of just zeros and ones</span><dd><p class="first last">It is not available for &#8216;MACCS&#8217;.</p>
-</dd>
+<dt>‘int’ <span class="classifier-delimiter">:</span> <span class="classifier">including counts for each bit instead of just zeros and ones</span></dt>
+<dd>It is not available for ‘MACCS’.</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
-<dt>&#8216;bit&#8217;</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">only zeros and ones</span><dd><p class="first last">It is not available for &#8216;Topological_torsion&#8217;.</p>
-</dd>
+<dt>‘bit’ <span class="classifier-delimiter">:</span> <span class="classifier">only zeros and ones</span></dt>
+<dd>It is not available for ‘Topological_torsion’.</dd>
 </dl>
 </li>
 </ul>
@@ -303,24 +301,21 @@ The four columns are nuclear charge, x-corrdinate, y-coordinate, z-coordinate fo
 <dd><p class="first">It sets number of bits in the specific type of fingerprint vectors. 
 Not availble for:</p>
 <blockquote class="last">
-<div><ul>
-<li><p class="first">&#8216;MACCS&#8217; (MACCS keys have a fixed length of 167 bits)</p>
-</li>
+<div><ul class="simple">
+<li>‘MACCS’ (MACCS keys have a fixed length of 167 bits)</li>
 <li><dl class="first docutils">
-<dt>&#8216;Atom_pair&#8217; (In the Atom_pair we return only those bits that are </dt>
-<dd><p class="first last">non zero for at least one of the molecules. Thus, the size 
+<dt>‘Atom_pair’ (In the Atom_pair we return only those bits that are </dt>
+<dd>non zero for at least one of the molecules. Thus, the size 
 will be significantly less compare to more than 8 million  
-available bits)</p>
-</dd>
+available bits)</dd>
 </dl>
 </li>
-<li><p class="first">&#8216;Topological_torsion&#8217;</p>
-</li>
+<li>‘Topological_torsion’</li>
 </ul>
 </div></blockquote>
 </dd>
 <dt>radius: integer, optional (default = 2)</dt>
-<dd>only availble for &#8216;Morgan&#8217; fingerprint.</dd>
+<dd>only availble for ‘Morgan’ fingerprint.</dd>
 <dt>removeHs: boolean, optional (default=True)</dt>
 <dd>If True, remove any hydrogen from the graph of a molecule.</dd>
 </dl>
@@ -347,20 +342,20 @@ any special character in the following list:</p>
 Note: The pattern must include the extension at the end. A list of available 
 file extensions is provided here:</p>
 <blockquote class="last">
-<div>&#8216;.mol&#8217;,&#8217;.mol2&#8217;  : molecule files 
-&#8216;.pdb&#8217;          : protein data bank file
-&#8216;.tpl&#8217;          : TPL file
-&#8216;.smi&#8217;          : file of one or more lines of Smiles string
-&#8216;.smarts&#8217;       : file of one or more lines of Smarts string</div></blockquote>
+<div>‘.mol’,’.mol2’  : molecule files 
+‘.pdb’          : protein data bank file
+‘.tpl’          : TPL file
+‘.smi’          : file of one or more lines of Smiles string
+‘.smarts’       : file of one or more lines of Smarts string</div></blockquote>
 </dd>
 <dt>path: string, optional (default = None)            </dt>
 <dd>If path is None, this function tries to open the file as a single
 file (without any pattern matching). Therefore, none of the above 
-special characters except &#8216;/&#8217; are helpful when they are not part 
+special characters except ‘/’ are helpful when they are not part 
 of the file name or path.    
 If not None, it determines the path that this function walk through
 and look for every file that mathes the pattern in the file. To start
-walking from the current directory, the path value should be &#8216;.&#8217;</dd>
+walking from the current directory, the path value should be ‘.’</dd>
 <dt><a href="#id1"><span class="problematic" id="id2">*</span></a>arguments: integer</dt>
 <dd><p class="first">If sequences in the special characters should be a range of integers,
 you can easily pass the start and the end arguments of range as extra 
@@ -371,33 +366,33 @@ arguments. But, notice that:</p>
 <dd>have [%s] or [!%s] in the file pattern.</dd>
 <dt>2- for each %s you must pass two integers (always an even number </dt>
 <dd>of extra arguments must be passed). Also, the order is important
-and it should be in the same order of &#8216;%s&#8217;s.</dd>
+and it should be in the same order of ‘%s’s.</dd>
 </dl>
 </div></blockquote>
 </dd>
 </dl>
 <blockquote>
 <div><p>(1)
-file: &#8216;Mydir/1f/1_opt.smi&#8217;
+file: ‘Mydir/1f/1_opt.smi’
 path: None
-&gt;&gt;&gt; sample files to be read: &#8216;Mydir/1f/1_opt.smi&#8217;</p>
+&gt;&gt;&gt; sample files to be read: ‘Mydir/1f/1_opt.smi’</p>
 <p>(2)
-file: &#8216;[1,2,3,4]?/<a href="#id3"><span class="problematic" id="id4">*</span></a>_opt.mol&#8217;
-path: &#8216;Mydir&#8217;
-&gt;&gt;&gt; sample files to be read: &#8216;Mydir/1f/1_opt.mol&#8217;, &#8216;Mydir/2c/2_opt.mol&#8217;, ...</p>
+file: ‘[1,2,3,4]?/<a href="#id3"><span class="problematic" id="id4">*</span></a>_opt.mol’
+path: ‘Mydir’
+&gt;&gt;&gt; sample files to be read: ‘Mydir/1f/1_opt.mol’, ‘Mydir/2c/2_opt.mol’, …</p>
 <p>(3)
-file: &#8216;[!1,2]?/<a href="#id5"><span class="problematic" id="id6">*</span></a>_opt.pdb&#8217;
-path: &#8216;.&#8217;
-&gt;&gt;&gt; sample files to be read: &#8216;./3f/3_opt.pdb&#8217;, &#8216;Mydir/7c/7_opt.pdb&#8217;, ...</p>
+file: ‘[!1,2]?/<a href="#id5"><span class="problematic" id="id6">*</span></a>_opt.pdb’
+path: ‘.’
+&gt;&gt;&gt; sample files to be read: ‘./3f/3_opt.pdb’, ‘Mydir/7c/7_opt.pdb’, …</p>
 <p>(4)
-file: &#8216;<a href="#id7"><span class="problematic" id="id8">*</span></a>[&#8216;f&#8217;,&#8217;c&#8217;]/<a href="#id9"><span class="problematic" id="id10">*</span></a>_opt.tpl&#8217;
-path: &#8216;Mydir&#8217;
-&gt;&gt;&gt; sample files to be read: &#8216;Mydir/1f/1_opt.tpl&#8217;, &#8216;Mydir/2c/2_opt.tpl&#8217;, ...</p>
+file: ‘<a href="#id7"><span class="problematic" id="id8">*</span></a>[‘f’,’c’]/<a href="#id9"><span class="problematic" id="id10">*</span></a>_opt.tpl’
+path: ‘Mydir’
+&gt;&gt;&gt; sample files to be read: ‘Mydir/1f/1_opt.tpl’, ‘Mydir/2c/2_opt.tpl’, …</p>
 <p>(5)
-file: &#8216;[%s]?/[!%s]_opt.mol2&#8217;
+file: ‘[%s]?/[!%s]_opt.mol2’
 arguments: 1,4,7,10
-path: &#8216;Mydir/all&#8217;
-&gt;&gt;&gt; sample files to be read: &#8216;Mydir/all/1f/1_opt.mol2&#8217;, &#8216;Mydir/all/2c/2_opt.mol2&#8217;, ...</p>
+path: ‘Mydir/all’
+&gt;&gt;&gt; sample files to be read: ‘Mydir/all/1f/1_opt.mol2’, ‘Mydir/all/2c/2_opt.mol2’, …</p>
 </div></blockquote>
 </dd></dl>
 
@@ -409,11 +404,11 @@ path: &#8216;Mydir/all&#8217;
 <dd><p>An interface to Dragon 6 and 7 chemoinformatics software.</p>
 <dl class="docutils">
 <dt>version: int, optional (default=7)</dt>
-<dd>The version of available Dragon on the user&#8217;s system. (available versions: 6 or 7)</dd>
-<dt>Weights: list, optional (default=[&#8220;Mass&#8221;,&#8221;VdWVolume&#8221;,&#8221;Electronegativity&#8221;,&#8221;Polarizability&#8221;,&#8221;Ionization&#8221;,&#8221;I-State&#8221;])</dt>
+<dd>The version of available Dragon on the user’s system. (available versions: 6 or 7)</dd>
+<dt>Weights: list, optional (default=[“Mass”,”VdWVolume”,”Electronegativity”,”Polarizability”,”Ionization”,”I-State”])</dt>
 <dd>A list of weights to be used</dd>
 <dt>blocks: list, optional (default=False)</dt>
-<dd>A list of descriptor blocks&#8217; id. For all of them parameter SelectAll=&#8221;true&#8221; is given.
+<dd>A list of descriptor blocks’ id. For all of them parameter SelectAll=”true” is given.
 To select descriptors one by one based on descriptor names, use Script Wizard in Drgon GUI.</dd>
 <dt>external: boolean, optional (default=False)</dt>
 <dd>If True, include external variables at the end of each saved file.</dd>
@@ -428,9 +423,9 @@ To select descriptors one by one based on descriptor names, use Script Wizard in
 </dd>
 </dl>
 <p>In the current version, we recommend the user to use this class with the following parameters:
-molInput = &#8216;file&#8217;
+molInput = ‘file’
 molfile = path to one SMILES representation file with .smi format or a dictionary of other formats
-script = &#8216;new&#8217;</p>
+script = ‘new’</p>
 </div></blockquote>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cheml.chem</span> <span class="k">import</span> <span class="n">Dragon</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">drg</span> <span class="o">=</span> <span class="n">Dragon</span><span class="p">(</span><span class="o">**</span><span class="n">parameters</span><span class="p">)</span>
@@ -448,20 +443,20 @@ script = &#8216;new&#8217;</p>
 the functionality of this function is the same as available Script wizard
 in the Dragon Graphic User Interface.
 Note: All reported nodes are mandatory, except the &lt;EXTERNAL&gt; tag
-Note: Script for version 7 doesn&#8217;t support fingerprints block</p>
+Note: Script for version 7 doesn’t support fingerprints block</p>
 <dl class="docutils">
-<dt>script: string, optional (default=&#8221;new&#8221;)</dt>
-<dd>If &#8220;new&#8221; start with a new script. If you want to load an existing script,
+<dt>script: string, optional (default=”new”)</dt>
+<dd>If “new” start with a new script. If you want to load an existing script,
 pass the filename with drs format.</dd>
-<dt>output_directory: string, optional (default = &#8216;./&#8217;)</dt>
+<dt>output_directory: string, optional (default = ‘./’)</dt>
 <dd>the path to the working directory to store output files.</dd>
 <dt>dragon: xml element</dt>
 <dd>Dragon script in  xml format.</dd>
 <dt>drs: string</dt>
 <dd>Dragon script file name</dd>
 <dt>data_path: string</dt>
-<dd>The path+name of saved data file in any format. If saveType is &#8216;block&#8217;
-or &#8216;subblock&#8217; data_path is just the path to the directory that all data
+<dd>The path+name of saved data file in any format. If saveType is ‘block’
+or ‘subblock’ data_path is just the path to the directory that all data
 files have been saved.</dd>
 </dl>
 <blockquote>
@@ -481,18 +476,18 @@ Each element (row) of input_matrix can be a vector, matrix or list of matrices.
 These three types of representation are originally based on possible outpts
 of Coulomb_Matrix function.</p>
 <dl class="docutils">
-<dt>norm_type: string or integer, optional (default = &#8216;fro&#8217;)</dt>
+<dt>norm_type: string or integer, optional (default = ‘fro’)</dt>
 <dd><p class="first">norm_type defines the type of norm of the difference of two rows of input
 matrix. Here is a list of available norms:</p>
 <blockquote class="last">
 <div><blockquote>
 <div><p>type          norm for matrices               norm for vectors
-&#8212;-          &#8212;&#8212;&#8212;&#8212;&#8212;&#8211;               &#8212;&#8212;&#8212;&#8212;&#8212;-
-&#8216;l2&#8217;          Frobenius norm                  l2 norm for vector
-&#8216;l1&#8217;          sum(sum(abs(x-y)))              -
-&#8216;nuc&#8217;         nuclear norm                    -
-&#8216;inf&#8217;         max(sum(abs(x-y), axis=1))      max(abs(x-y))
-&#8216;-inf&#8217;        min(sum(abs(x-y), axis=1))      min(abs(x-y))
+—-          —————–               —————-
+‘l2’          Frobenius norm                  l2 norm for vector
+‘l1’          sum(sum(abs(x-y)))              -
+‘nuc’         nuclear norm                    -
+‘inf’         max(sum(abs(x-y), axis=1))      max(abs(x-y))
+‘-inf’        min(sum(abs(x-y), axis=1))      min(abs(x-y))
 0             -                               sum(x!=0)
 1             max(sum(abs(x-y), axis=0))      sum(abs(x)**ord)**(1./ord)
 -1            min(sum(abs(x-y), axis=0))      sum(abs(x)**ord)**(1./ord)
@@ -500,8 +495,8 @@ matrix. Here is a list of available norms:</p>
 -2            smallest singular value         sum(abs(x)**ord)**(1./ord)</p>
 <blockquote>
 <div></div></blockquote>
-<p>&#8216;avg&#8217;         avg(sum(d(x,y[l])+d(x[l],y))))
-&#8216;max&#8217;         avg(max(d(x,y[l])+d(x[l],y))))</p>
+<p>‘avg’         avg(sum(d(x,y[l])+d(x[l],y))))
+‘max’         avg(max(d(x,y[l])+d(x[l],y))))</p>
 </div></blockquote>
 <ul class="simple">
 <li>most of these norms are provided by numpy.linalg.norm</li>
@@ -535,7 +530,7 @@ matrix. Here is a list of available norms:</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Mojtaba Haghighatlari.
+        &copy; Copyright 2016, Mojtaba Haghighatlari and Hachmann lab.
 
     </p>
   </div>
@@ -557,7 +552,7 @@ matrix. Here is a list of available norms:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.4.1',
+            VERSION:'0.4.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

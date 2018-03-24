@@ -42,6 +42,7 @@ concat
     |   ``<< names = None``
     |   ``<< join_axes = None``
     |   ``<< copy = True``
+    |   ``<< axis = 0``
     |   ``>> id df1``
     |   ``>> id df3``
     |   ``>> id df2``

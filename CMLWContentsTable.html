@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Table of Contents &mdash; ChemML 0.4.1 documentation</title>
+  <title>Table of Contents &mdash; ChemML 0.4.2 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ChemML 0.4.1 documentation" href="index.html"/>
+    <link rel="top" title="ChemML 0.4.2 documentation" href="index.html"/>
         <link rel="next" title="Wrapper Reference" href="CMLWReference.html"/>
         <link rel="prev" title="Input File Generator" href="CMLWInputFileGenerator.html"/> 
 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.4.1
+                0.4.2
               </div>
             
           
@@ -143,7 +143,7 @@
 <p>This is a complete list of all the methods that are available through ChemML Wrapper interface. You can click on each function
 for further information.</p>
 <dl class="docutils">
-<dt>Table&#8217;s columns describe:</dt>
+<dt>Table’s columns describe:</dt>
 <dd><ul class="first last simple">
 <li>task and subtask: for an easier classification of methods</li>
 <li>host: the main library/dependency required for running a method</li>
@@ -163,7 +163,7 @@ for further information.</p>
 <col width="31%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head">&nbsp;</th>
+<tr class="row-odd"><th class="head">&#160;</th>
 <th class="head">task</th>
 <th class="head">subtask</th>
 <th class="head">host</th>
@@ -186,26 +186,42 @@ for further information.</p>
 <td>datasets</td>
 <td>cheml</td>
 <td><a class="reference internal" href="wrapper_docs/cheml.load_cep_homo.html#load-cep-homo"><span class="std std-ref">load_cep_homo</span></a></td>
-<td>(doesn&#8217;t receive anything)</td>
+<td>(doesn’t receive anything)</td>
 <td>smiles, homo</td>
 </tr>
 <tr class="row-even"><td>3</td>
 <td>Enter</td>
 <td>datasets</td>
 <td>cheml</td>
-<td><a class="reference internal" href="wrapper_docs/cheml.load_organic_density.html#load-organic-density"><span class="std std-ref">load_organic_density</span></a></td>
-<td>(doesn&#8217;t receive anything)</td>
-<td>smiles, features, density</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.load_comp_energy.html#load-comp-energy"><span class="std std-ref">load_comp_energy</span></a></td>
+<td>(doesn’t receive anything)</td>
+<td>formation_energy, entries</td>
 </tr>
 <tr class="row-odd"><td>4</td>
 <td>Enter</td>
 <td>datasets</td>
 <td>cheml</td>
-<td><a class="reference internal" href="wrapper_docs/cheml.load_xyz_polarizability.html#load-xyz-polarizability"><span class="std std-ref">load_xyz_polarizability</span></a></td>
-<td>(doesn&#8217;t receive anything)</td>
-<td>pol, coordinates</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.load_crystal_structures.html#load-crystal-structures"><span class="std std-ref">load_crystal_structures</span></a></td>
+<td>(doesn’t receive anything)</td>
+<td>entries</td>
 </tr>
 <tr class="row-even"><td>5</td>
+<td>Enter</td>
+<td>datasets</td>
+<td>cheml</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.load_organic_density.html#load-organic-density"><span class="std std-ref">load_organic_density</span></a></td>
+<td>(doesn’t receive anything)</td>
+<td>smiles, features, density</td>
+</tr>
+<tr class="row-odd"><td>6</td>
+<td>Enter</td>
+<td>datasets</td>
+<td>cheml</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.load_xyz_polarizability.html#load-xyz-polarizability"><span class="std std-ref">load_xyz_polarizability</span></a></td>
+<td>(doesn’t receive anything)</td>
+<td>coordinates, polarizability</td>
+</tr>
+<tr class="row-even"><td>7</td>
 <td>Enter</td>
 <td>python script</td>
 <td>cheml</td>
@@ -213,31 +229,31 @@ for further information.</p>
 <td>iv4, iv5, iv6, iv1, iv2, iv3</td>
 <td>ov2, ov3, ov1, ov6, ov4, ov5</td>
 </tr>
-<tr class="row-odd"><td>6</td>
+<tr class="row-odd"><td>8</td>
 <td>Enter</td>
 <td>xyz</td>
 <td>cheml</td>
 <td><a class="reference internal" href="wrapper_docs/cheml.XYZreader.html#xyzreader"><span class="std std-ref">XYZreader</span></a></td>
-<td>(doesn&#8217;t receive anything)</td>
+<td>(doesn’t receive anything)</td>
 <td>molecules</td>
 </tr>
-<tr class="row-even"><td>7</td>
+<tr class="row-even"><td>9</td>
 <td>Enter</td>
 <td>table</td>
 <td>pandas</td>
 <td><a class="reference internal" href="wrapper_docs/pandas.read_excel.html#read-excel"><span class="std std-ref">read_excel</span></a></td>
-<td>(doesn&#8217;t receive anything)</td>
+<td>(doesn’t receive anything)</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>8</td>
+<tr class="row-odd"><td>10</td>
 <td>Enter</td>
 <td>table</td>
 <td>pandas</td>
 <td><a class="reference internal" href="wrapper_docs/pandas.read_table.html#read-table"><span class="std std-ref">read_table</span></a></td>
-<td>(doesn&#8217;t receive anything)</td>
+<td>(doesn’t receive anything)</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>9</td>
+<tr class="row-even"><td>11</td>
 <td>Represent</td>
 <td>distance matrix</td>
 <td>cheml</td>
@@ -245,7 +261,7 @@ for further information.</p>
 <td>df</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>10</td>
+<tr class="row-odd"><td>12</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -253,7 +269,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>11</td>
+<tr class="row-even"><td>13</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -261,7 +277,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>12</td>
+<tr class="row-odd"><td>14</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -269,7 +285,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>13</td>
+<tr class="row-even"><td>15</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -277,7 +293,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>14</td>
+<tr class="row-odd"><td>16</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -285,7 +301,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>15</td>
+<tr class="row-even"><td>17</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -293,7 +309,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>16</td>
+<tr class="row-odd"><td>18</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -301,7 +317,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>17</td>
+<tr class="row-even"><td>19</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -309,7 +325,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>18</td>
+<tr class="row-odd"><td>20</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -317,7 +333,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>19</td>
+<tr class="row-even"><td>21</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -325,15 +341,15 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>20</td>
+<tr class="row-odd"><td>22</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
 <td><a class="reference internal" href="wrapper_docs/cheml.GCLPAttributeGenerator.html#gclpattributegenerator"><span class="std std-ref">GCLPAttributeGenerator</span></a></td>
-<td>entries</td>
+<td>energies, phases, entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>21</td>
+<tr class="row-even"><td>23</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -341,7 +357,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>22</td>
+<tr class="row-odd"><td>24</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -349,7 +365,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>23</td>
+<tr class="row-even"><td>25</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -357,7 +373,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>24</td>
+<tr class="row-odd"><td>26</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -365,7 +381,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>25</td>
+<tr class="row-even"><td>27</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -373,7 +389,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>26</td>
+<tr class="row-odd"><td>28</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -381,7 +397,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>27</td>
+<tr class="row-even"><td>29</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -389,7 +405,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>28</td>
+<tr class="row-odd"><td>30</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -397,7 +413,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>29</td>
+<tr class="row-even"><td>31</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -405,7 +421,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>30</td>
+<tr class="row-odd"><td>32</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -413,7 +429,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>31</td>
+<tr class="row-even"><td>33</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -421,7 +437,7 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>32</td>
+<tr class="row-odd"><td>34</td>
 <td>Represent</td>
 <td>inorganic descriptors</td>
 <td>cheml</td>
@@ -429,7 +445,23 @@ for further information.</p>
 <td>entries</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>33</td>
+<tr class="row-even"><td>35</td>
+<td>Represent</td>
+<td>inorganic input</td>
+<td>cheml</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.CompositionEntry.html#compositionentry"><span class="std std-ref">CompositionEntry</span></a></td>
+<td>(doesn’t receive anything)</td>
+<td>entries</td>
+</tr>
+<tr class="row-odd"><td>36</td>
+<td>Represent</td>
+<td>inorganic input</td>
+<td>cheml</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.CrystalStructureEntry.html#crystalstructureentry"><span class="std std-ref">CrystalStructureEntry</span></a></td>
+<td>(doesn’t receive anything)</td>
+<td>entries</td>
+</tr>
+<tr class="row-even"><td>37</td>
 <td>Represent</td>
 <td>molecular descriptors</td>
 <td>cheml</td>
@@ -437,7 +469,7 @@ for further information.</p>
 <td>molecules</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>34</td>
+<tr class="row-odd"><td>38</td>
 <td>Represent</td>
 <td>molecular descriptors</td>
 <td>cheml</td>
@@ -445,7 +477,7 @@ for further information.</p>
 <td>molecules</td>
 <td>df</td>
 </tr>
-<tr class="row-even"><td>35</td>
+<tr class="row-even"><td>39</td>
 <td>Represent</td>
 <td>molecular descriptors</td>
 <td>cheml</td>
@@ -453,7 +485,7 @@ for further information.</p>
 <td>molfile</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>36</td>
+<tr class="row-odd"><td>40</td>
 <td>Represent</td>
 <td>molecular descriptors</td>
 <td>cheml</td>
@@ -461,7 +493,7 @@ for further information.</p>
 <td>molfile</td>
 <td>df, removed_rows</td>
 </tr>
-<tr class="row-even"><td>37</td>
+<tr class="row-even"><td>41</td>
 <td>Prepare</td>
 <td>data cleaning</td>
 <td>cheml</td>
@@ -469,7 +501,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api, <a href="#id1"><span class="problematic" id="id2">removed_columns_</span></a></td>
 </tr>
-<tr class="row-odd"><td>38</td>
+<tr class="row-odd"><td>42</td>
 <td>Prepare</td>
 <td>data cleaning</td>
 <td>cheml</td>
@@ -477,7 +509,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-even"><td>39</td>
+<tr class="row-even"><td>43</td>
 <td>Prepare</td>
 <td>data cleaning</td>
 <td>cheml</td>
@@ -485,7 +517,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api, <a href="#id3"><span class="problematic" id="id4">removed_columns_</span></a></td>
 </tr>
-<tr class="row-odd"><td>40</td>
+<tr class="row-odd"><td>44</td>
 <td>Prepare</td>
 <td>data manipulation</td>
 <td>cheml</td>
@@ -493,7 +525,7 @@ for further information.</p>
 <td>df</td>
 <td>df1, df2</td>
 </tr>
-<tr class="row-even"><td>41</td>
+<tr class="row-even"><td>45</td>
 <td>Prepare</td>
 <td>data manipulation</td>
 <td>pandas</td>
@@ -501,7 +533,7 @@ for further information.</p>
 <td>df1, df3, df2</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>42</td>
+<tr class="row-odd"><td>46</td>
 <td>Prepare</td>
 <td>data cleaning</td>
 <td>sklearn</td>
@@ -509,7 +541,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-even"><td>43</td>
+<tr class="row-even"><td>47</td>
 <td>Prepare</td>
 <td>feature representation</td>
 <td>sklearn</td>
@@ -517,7 +549,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-odd"><td>44</td>
+<tr class="row-odd"><td>48</td>
 <td>Prepare</td>
 <td>feature representation</td>
 <td>sklearn</td>
@@ -525,7 +557,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-even"><td>45</td>
+<tr class="row-even"><td>49</td>
 <td>Prepare</td>
 <td>feature representation</td>
 <td>sklearn</td>
@@ -533,7 +565,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-odd"><td>46</td>
+<tr class="row-odd"><td>50</td>
 <td>Prepare</td>
 <td>feature transformation</td>
 <td>sklearn</td>
@@ -541,7 +573,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-even"><td>47</td>
+<tr class="row-even"><td>51</td>
 <td>Prepare</td>
 <td>feature transformation</td>
 <td>sklearn</td>
@@ -549,7 +581,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-odd"><td>48</td>
+<tr class="row-odd"><td>52</td>
 <td>Prepare</td>
 <td>scaling</td>
 <td>sklearn</td>
@@ -557,7 +589,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-even"><td>49</td>
+<tr class="row-even"><td>53</td>
 <td>Prepare</td>
 <td>scaling</td>
 <td>sklearn</td>
@@ -565,7 +597,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-odd"><td>50</td>
+<tr class="row-odd"><td>54</td>
 <td>Prepare</td>
 <td>scaling</td>
 <td>sklearn</td>
@@ -573,7 +605,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-even"><td>51</td>
+<tr class="row-even"><td>55</td>
 <td>Prepare</td>
 <td>scaling</td>
 <td>sklearn</td>
@@ -581,7 +613,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-odd"><td>52</td>
+<tr class="row-odd"><td>56</td>
 <td>Prepare</td>
 <td>scaling</td>
 <td>sklearn</td>
@@ -589,7 +621,7 @@ for further information.</p>
 <td>df, api</td>
 <td>df, api</td>
 </tr>
-<tr class="row-even"><td>53</td>
+<tr class="row-even"><td>57</td>
 <td>Prepare</td>
 <td>split</td>
 <td>sklearn</td>
@@ -597,7 +629,7 @@ for further information.</p>
 <td>dfx</td>
 <td>api, fold_gen</td>
 </tr>
-<tr class="row-odd"><td>54</td>
+<tr class="row-odd"><td>58</td>
 <td>Prepare</td>
 <td>split</td>
 <td>sklearn</td>
@@ -605,23 +637,23 @@ for further information.</p>
 <td>dfx</td>
 <td>api, fold_gen</td>
 </tr>
-<tr class="row-even"><td>55</td>
+<tr class="row-even"><td>59</td>
 <td>Prepare</td>
 <td>split</td>
 <td>sklearn</td>
 <td><a class="reference internal" href="wrapper_docs/sklearn.ShuffleSplit.html#shufflesplit"><span class="std std-ref">ShuffleSplit</span></a></td>
-<td>df</td>
+<td>dfx</td>
 <td>api, fold_gen</td>
 </tr>
-<tr class="row-odd"><td>56</td>
+<tr class="row-odd"><td>60</td>
 <td>Prepare</td>
 <td>split</td>
 <td>sklearn</td>
 <td><a class="reference internal" href="wrapper_docs/sklearn.StratifiedShuffleSplit.html#stratifiedshufflesplit"><span class="std std-ref">StratifiedShuffleSplit</span></a></td>
-<td>df</td>
+<td>dfx</td>
 <td>api, fold_gen</td>
 </tr>
-<tr class="row-even"><td>57</td>
+<tr class="row-even"><td>61</td>
 <td>Prepare</td>
 <td>split</td>
 <td>sklearn</td>
@@ -629,51 +661,19 @@ for further information.</p>
 <td>dfy, dfx</td>
 <td>dfx_test, dfy_train, dfy_test, dfx_train</td>
 </tr>
-<tr class="row-odd"><td>58</td>
-<td>Model</td>
-<td>regression</td>
-<td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.ARDRegression.html#ardregression"><span class="std std-ref">ARDRegression</span></a></td>
-<td>api, dfy, dfx</td>
-<td>api, dfy_predict</td>
-</tr>
-<tr class="row-even"><td>59</td>
-<td>Model</td>
-<td>regression</td>
-<td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.BayesianRidge.html#bayesianridge"><span class="std std-ref">BayesianRidge</span></a></td>
-<td>api, dfy, dfx</td>
-<td>api, dfy_predict</td>
-</tr>
-<tr class="row-odd"><td>60</td>
-<td>Model</td>
-<td>regression</td>
-<td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.ElasticNet.html#elasticnet"><span class="std std-ref">ElasticNet</span></a></td>
-<td>api, dfy, dfx</td>
-<td>api, dfy_predict</td>
-</tr>
-<tr class="row-even"><td>61</td>
-<td>Model</td>
-<td>regression</td>
-<td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.KernelRidge.html#kernelridge"><span class="std std-ref">KernelRidge</span></a></td>
-<td>api, dfy, dfx</td>
-<td>api, dfy_predict</td>
-</tr>
 <tr class="row-odd"><td>62</td>
 <td>Model</td>
 <td>regression</td>
-<td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.Lars.html#lars"><span class="std std-ref">Lars</span></a></td>
+<td>cheml</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.MLP.html#mlp"><span class="std std-ref">MLP</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
 <tr class="row-even"><td>63</td>
 <td>Model</td>
 <td>regression</td>
-<td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.Lasso.html#lasso"><span class="std std-ref">Lasso</span></a></td>
+<td>cheml</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.MLP_sklearn.html#mlp-sklearn"><span class="std std-ref">MLP_sklearn</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
@@ -681,7 +681,7 @@ for further information.</p>
 <td>Model</td>
 <td>regression</td>
 <td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.LassoLars.html#lassolars"><span class="std std-ref">LassoLars</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.ARDRegression.html#ardregression"><span class="std std-ref">ARDRegression</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
@@ -689,7 +689,7 @@ for further information.</p>
 <td>Model</td>
 <td>regression</td>
 <td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.LinearRegression.html#linearregression"><span class="std std-ref">LinearRegression</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.BayesianRidge.html#bayesianridge"><span class="std std-ref">BayesianRidge</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
@@ -697,7 +697,7 @@ for further information.</p>
 <td>Model</td>
 <td>regression</td>
 <td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.LinearSVR.html#linearsvr"><span class="std std-ref">LinearSVR</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.ElasticNet.html#elasticnet"><span class="std std-ref">ElasticNet</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
@@ -705,7 +705,7 @@ for further information.</p>
 <td>Model</td>
 <td>regression</td>
 <td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.LogisticRegression.html#logisticregression"><span class="std std-ref">LogisticRegression</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.KernelRidge.html#kernelridge"><span class="std std-ref">KernelRidge</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
@@ -713,7 +713,7 @@ for further information.</p>
 <td>Model</td>
 <td>regression</td>
 <td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.MLPRegressor.html#mlpregressor"><span class="std std-ref">MLPRegressor</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.Lars.html#lars"><span class="std std-ref">Lars</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
@@ -721,7 +721,7 @@ for further information.</p>
 <td>Model</td>
 <td>regression</td>
 <td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.MultiTaskElasticNet.html#multitaskelasticnet"><span class="std std-ref">MultiTaskElasticNet</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.Lasso.html#lasso"><span class="std std-ref">Lasso</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
@@ -729,7 +729,7 @@ for further information.</p>
 <td>Model</td>
 <td>regression</td>
 <td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.MultiTaskLasso.html#multitasklasso"><span class="std std-ref">MultiTaskLasso</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.LassoLars.html#lassolars"><span class="std std-ref">LassoLars</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
@@ -737,7 +737,7 @@ for further information.</p>
 <td>Model</td>
 <td>regression</td>
 <td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.NuSVR.html#nusvr"><span class="std std-ref">NuSVR</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.LinearRegression.html#linearregression"><span class="std std-ref">LinearRegression</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
@@ -745,7 +745,7 @@ for further information.</p>
 <td>Model</td>
 <td>regression</td>
 <td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.Ridge.html#ridge"><span class="std std-ref">Ridge</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.LinearSVR.html#linearsvr"><span class="std std-ref">LinearSVR</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
@@ -753,7 +753,7 @@ for further information.</p>
 <td>Model</td>
 <td>regression</td>
 <td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.SGDRegressor.html#sgdregressor"><span class="std std-ref">SGDRegressor</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.LogisticRegression.html#logisticregression"><span class="std std-ref">LogisticRegression</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
@@ -761,11 +761,67 @@ for further information.</p>
 <td>Model</td>
 <td>regression</td>
 <td>sklearn</td>
-<td><a class="reference internal" href="wrapper_docs/sklearn.SVR.html#svr"><span class="std std-ref">SVR</span></a></td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.MLPRegressor.html#mlpregressor"><span class="std std-ref">MLPRegressor</span></a></td>
 <td>api, dfy, dfx</td>
 <td>api, dfy_predict</td>
 </tr>
 <tr class="row-even"><td>75</td>
+<td>Model</td>
+<td>regression</td>
+<td>sklearn</td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.MultiTaskElasticNet.html#multitaskelasticnet"><span class="std std-ref">MultiTaskElasticNet</span></a></td>
+<td>api, dfy, dfx</td>
+<td>api, dfy_predict</td>
+</tr>
+<tr class="row-odd"><td>76</td>
+<td>Model</td>
+<td>regression</td>
+<td>sklearn</td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.MultiTaskLasso.html#multitasklasso"><span class="std std-ref">MultiTaskLasso</span></a></td>
+<td>api, dfy, dfx</td>
+<td>api, dfy_predict</td>
+</tr>
+<tr class="row-even"><td>77</td>
+<td>Model</td>
+<td>regression</td>
+<td>sklearn</td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.NuSVR.html#nusvr"><span class="std std-ref">NuSVR</span></a></td>
+<td>api, dfy, dfx</td>
+<td>api, dfy_predict</td>
+</tr>
+<tr class="row-odd"><td>78</td>
+<td>Model</td>
+<td>regression</td>
+<td>sklearn</td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.Ridge.html#ridge"><span class="std std-ref">Ridge</span></a></td>
+<td>api, dfy, dfx</td>
+<td>api, dfy_predict</td>
+</tr>
+<tr class="row-even"><td>79</td>
+<td>Model</td>
+<td>regression</td>
+<td>sklearn</td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.SGDRegressor.html#sgdregressor"><span class="std std-ref">SGDRegressor</span></a></td>
+<td>api, dfy, dfx</td>
+<td>api, dfy_predict</td>
+</tr>
+<tr class="row-odd"><td>80</td>
+<td>Model</td>
+<td>regression</td>
+<td>sklearn</td>
+<td><a class="reference internal" href="wrapper_docs/sklearn.SVR.html#svr"><span class="std std-ref">SVR</span></a></td>
+<td>api, dfy, dfx</td>
+<td>api, dfy_predict</td>
+</tr>
+<tr class="row-even"><td>81</td>
+<td>Search</td>
+<td>genetic algorithm</td>
+<td>cheml</td>
+<td><a class="reference internal" href="wrapper_docs/cheml.GA_DEAP.html#ga-deap"><span class="std std-ref">GA_DEAP</span></a></td>
+<td>evaluate</td>
+<td>best_individual, best_ind_df</td>
+</tr>
+<tr class="row-odd"><td>82</td>
 <td>Search</td>
 <td>evaluate</td>
 <td>pandas</td>
@@ -773,7 +829,7 @@ for further information.</p>
 <td>df</td>
 <td>df</td>
 </tr>
-<tr class="row-odd"><td>76</td>
+<tr class="row-even"><td>83</td>
 <td>Search</td>
 <td>evaluate</td>
 <td>sklearn</td>
@@ -781,23 +837,23 @@ for further information.</p>
 <td>dfy, dfy_predict</td>
 <td><a href="#id5"><span class="problematic" id="id6">evaluation_results_</span></a>, evaluator</td>
 </tr>
-<tr class="row-even"><td>77</td>
+<tr class="row-odd"><td>84</td>
 <td>Search</td>
 <td>evaluate</td>
 <td>sklearn</td>
 <td><a class="reference internal" href="wrapper_docs/sklearn.scorer_regression.html#scorer-regression"><span class="std std-ref">scorer_regression</span></a></td>
-<td>(doesn&#8217;t receive anything)</td>
+<td>(doesn’t receive anything)</td>
 <td>scorer</td>
 </tr>
-<tr class="row-odd"><td>78</td>
+<tr class="row-even"><td>85</td>
 <td>Search</td>
 <td>grid</td>
 <td>sklearn</td>
 <td><a class="reference internal" href="wrapper_docs/sklearn.GridSearchCV.html#gridsearchcv"><span class="std std-ref">GridSearchCV</span></a></td>
-<td>dfy, dfx, estimator, scorer</td>
+<td>dfy, dfx, estimator, scorer, cv</td>
 <td><a href="#id7"><span class="problematic" id="id8">cv_results_</span></a>, api, <a href="#id9"><span class="problematic" id="id10">best_estimator_</span></a></td>
 </tr>
-<tr class="row-even"><td>79</td>
+<tr class="row-odd"><td>86</td>
 <td>Search</td>
 <td>grid</td>
 <td>sklearn</td>
@@ -805,15 +861,15 @@ for further information.</p>
 <td>dfy, dfx, estimator, scorer, cv</td>
 <td>train_sizes_abs, <a href="#id11"><span class="problematic" id="id12">extended_result_</span></a>, test_scores, train_scores</td>
 </tr>
-<tr class="row-odd"><td>80</td>
+<tr class="row-even"><td>87</td>
 <td>Search</td>
 <td>validate</td>
 <td>sklearn</td>
 <td><a class="reference internal" href="wrapper_docs/sklearn.cross_val_predict.html#cross-val-predict"><span class="std std-ref">cross_val_predict</span></a></td>
-<td>dfy, dfx, cv, estimator</td>
+<td>dfy, dfx, estimator, scorer, cv</td>
 <td>dfy_predict</td>
 </tr>
-<tr class="row-even"><td>81</td>
+<tr class="row-odd"><td>88</td>
 <td>Search</td>
 <td>validate</td>
 <td>sklearn</td>
@@ -821,7 +877,7 @@ for further information.</p>
 <td>dfy, dfx, estimator, scorer, cv</td>
 <td>scores</td>
 </tr>
-<tr class="row-odd"><td>82</td>
+<tr class="row-even"><td>89</td>
 <td>Visualize</td>
 <td>artist</td>
 <td>cheml</td>
@@ -829,7 +885,7 @@ for further information.</p>
 <td>fig</td>
 <td>fig</td>
 </tr>
-<tr class="row-even"><td>83</td>
+<tr class="row-odd"><td>90</td>
 <td>Visualize</td>
 <td>plot</td>
 <td>cheml</td>
@@ -837,7 +893,7 @@ for further information.</p>
 <td>dfx</td>
 <td>fig</td>
 </tr>
-<tr class="row-odd"><td>84</td>
+<tr class="row-even"><td>91</td>
 <td>Visualize</td>
 <td>plot</td>
 <td>cheml</td>
@@ -845,23 +901,23 @@ for further information.</p>
 <td>dfy, dfx</td>
 <td>fig</td>
 </tr>
-<tr class="row-even"><td>85</td>
+<tr class="row-odd"><td>92</td>
 <td>Visualize</td>
 <td>plot</td>
 <td>pandas</td>
 <td><a class="reference internal" href="wrapper_docs/pandas.plot.html#plot"><span class="std std-ref">plot</span></a></td>
 <td>df</td>
-<td>axes</td>
+<td>fig</td>
 </tr>
-<tr class="row-odd"><td>86</td>
+<tr class="row-even"><td>93</td>
 <td>Store</td>
 <td>figure</td>
 <td>cheml</td>
 <td><a class="reference internal" href="wrapper_docs/cheml.SavePlot.html#saveplot"><span class="std std-ref">SavePlot</span></a></td>
 <td>fig</td>
-<td>(doesn&#8217;t send anything)</td>
+<td>(doesn’t send anything)</td>
 </tr>
-<tr class="row-even"><td>87</td>
+<tr class="row-odd"><td>94</td>
 <td>Store</td>
 <td>file</td>
 <td>cheml</td>
@@ -892,7 +948,7 @@ for further information.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Mojtaba Haghighatlari.
+        &copy; Copyright 2016, Mojtaba Haghighatlari and Hachmann lab.
 
     </p>
   </div>
@@ -914,7 +970,7 @@ for further information.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.4.1',
+            VERSION:'0.4.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

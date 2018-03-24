@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>cheml.visualization module &mdash; ChemML 0.4.1 documentation</title>
+  <title>cheml.visualization module &mdash; ChemML 0.4.2 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ChemML 0.4.1 documentation" href="index.html"/>
+    <link rel="top" title="ChemML 0.4.2 documentation" href="index.html"/>
         <link rel="up" title="cheml library" href="cheml.html"/>
         <link rel="prev" title="cheml.search module" href="cheml.search.html"/> 
 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.4.1
+                0.4.2
               </div>
             
           
@@ -167,13 +167,13 @@
 <em class="property">class </em><code class="descclassname">cheml.visualization.</code><code class="descname">scatter2D</code><span class="sig-paren">(</span><em>color='b'</em>, <em>marker='.'</em>, <em>linestyle=''</em>, <em>linewidth=2</em><span class="sig-paren">)</span><a class="headerlink" href="#cheml.visualization.scatter2D" title="Permalink to this definition">¶</a></dt>
 <dd><p>The scatter 2D plotting interface. It is built on top of the matplotlib.pyplot.plot function.</p>
 <dl class="docutils">
-<dt>color: string, optional (default=&#8217;b&#8217;)</dt>
+<dt>color: string, optional (default=’b’)</dt>
 <dd>set color
 check this link Notes for available options: <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot">https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot</a></dd>
-<dt>marker: string, optional (default=&#8217;.&#8217;)</dt>
+<dt>marker: string, optional (default=’.’)</dt>
 <dd>set marker
 check this link Notes for available options: <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot">https://matplotlib.org/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot</a></dd>
-<dt>linestyle: string, optional (default=&#8217;&#8216;)</dt>
+<dt>linestyle: string, optional (default=’‘)</dt>
 <dd>set line style
 check this link: <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D.set_linestyle">https://matplotlib.org/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D.set_linestyle</a></dd>
 <dt>linewidth: float, optional (default=2)</dt>
@@ -213,15 +213,15 @@ check this link: <a class="reference external" href="https://matplotlib.org/api/
 <dd><p>The histogram plotting interface. It is built on top of the matplotlib.pyplot.hist function .
 check this link: <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html#matplotlib.pyplot.hist">https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html#matplotlib.pyplot.hist</a></p>
 <dl class="docutils">
-<dt>bins:  integer or sequence or &#8216;auto&#8217;, optional (default = None)</dt>
+<dt>bins:  integer or sequence or ‘auto’, optional (default = None)</dt>
 <dd>exact same parameter from matplotlib.pyplot.hist</dd>
 <dt>color: color or array_like of colors or None, optional (default = None)</dt>
 <dd>exact same parameter from matplotlib.pyplot.hist</dd>
-<dt>kwargs</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">dictionary, optional (default = {})</span><dd><p class="first">add any matplotlib.pyplot.hist parameter in the form of a dictionary.
+<dt>kwargs <span class="classifier-delimiter">:</span> <span class="classifier">dictionary, optional (default = {})</span></dt>
+<dd><p class="first">add any matplotlib.pyplot.hist parameter in the form of a dictionary.
 check this link: <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html#matplotlib.pyplot.hist">https://matplotlib.org/api/_as_gen/matplotlib.pyplot.hist.html#matplotlib.pyplot.hist</a></p>
 <p class="last">provide keys in the form of a string.
-for example kwargs = {&#8216;key&#8217;:value}</p>
+for example kwargs = {‘key’:value}</p>
 </dd>
 </dl>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cheml.visualization</span> <span class="k">import</span> <span class="n">hist</span>
@@ -252,11 +252,11 @@ for example kwargs = {&#8216;key&#8217;:value}</p>
 <em class="property">class </em><code class="descclassname">cheml.visualization.</code><code class="descname">decorator</code><span class="sig-paren">(</span><em>title=''</em>, <em>xlabel=''</em>, <em>ylabel=''</em>, <em>xlim=(None</em>, <em>None)</em>, <em>ylim=(None</em>, <em>None)</em>, <em>grid=True</em>, <em>grid_color='k'</em>, <em>grid_linestyle='--'</em>, <em>grid_linewidth=0.5</em><span class="sig-paren">)</span><a class="headerlink" href="#cheml.visualization.decorator" title="Permalink to this definition">¶</a></dt>
 <dd><p>This class provides options to decorate a plot with more information.</p>
 <dl class="docutils">
-<dt>title: string, optional (default=&#8217;&#8216;)</dt>
+<dt>title: string, optional (default=’‘)</dt>
 <dd>title</dd>
-<dt>xlabel: string, optional (default=&#8217;&#8216;)</dt>
+<dt>xlabel: string, optional (default=’‘)</dt>
 <dd>the x axis label</dd>
-<dt>ylabel: string, optional (default=&#8217;&#8216;)</dt>
+<dt>ylabel: string, optional (default=’‘)</dt>
 <dd>the y axis label</dd>
 <dt>xlim: tuple, optional (default=(None, None))</dt>
 <dd>a tuple of min and max of x axis</dd>
@@ -265,7 +265,7 @@ for example kwargs = {&#8216;key&#8217;:value}</p>
 <dt>grid: boolean, optional (default=True)</dt>
 <dd>axes grids can be on (True) or off (False)
 check: <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.grid.html">https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.grid.html</a></dd>
-<dt>gridcolor: string, optional (default=&#8217;k&#8217;)</dt>
+<dt>gridcolor: string, optional (default=’k’)</dt>
 <dd>set grid color
 check this link: <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D.set_linestyle">https://matplotlib.org/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D.set_linestyle</a></dd>
 <dt>grid_linewidth: float, optional (default=2)</dt>
@@ -299,15 +299,15 @@ check this link: <a class="reference external" href="https://matplotlib.org/api/
 <dd><p>The matplotlib_font function sets custom font properties.</p>
 <p>Changing these parameters wil affect all the plots in your working session.</p>
 <dl class="docutils">
-<dt>family: string, optional (default = &#8216;normal&#8217;)</dt>
+<dt>family: string, optional (default = ‘normal’)</dt>
 <dd>check this example: <a class="reference external" href="https://matplotlib.org/examples/pylab_examples/fonts_demo.html">https://matplotlib.org/examples/pylab_examples/fonts_demo.html</a></dd>
 <dt>size: integer or string, optional (default = 18)</dt>
 <dd>check this example: <a class="reference external" href="https://matplotlib.org/examples/pylab_examples/fonts_demo.html">https://matplotlib.org/examples/pylab_examples/fonts_demo.html</a></dd>
-<dt>weight: string, optional (default = &#8216;normal&#8217;)</dt>
+<dt>weight: string, optional (default = ‘normal’)</dt>
 <dd>check this example: <a class="reference external" href="https://matplotlib.org/examples/pylab_examples/fonts_demo.html">https://matplotlib.org/examples/pylab_examples/fonts_demo.html</a></dd>
-<dt>style: string, optional (default = &#8216;normal&#8217;)</dt>
+<dt>style: string, optional (default = ‘normal’)</dt>
 <dd>check this example: <a class="reference external" href="https://matplotlib.org/examples/pylab_examples/fonts_demo.html">https://matplotlib.org/examples/pylab_examples/fonts_demo.html</a></dd>
-<dt>variant: string, optional (default = &#8216;normal&#8217;)</dt>
+<dt>variant: string, optional (default = ‘normal’)</dt>
 <dd>check this example: <a class="reference external" href="https://matplotlib.org/examples/pylab_examples/fonts_demo.html">https://matplotlib.org/examples/pylab_examples/fonts_demo.html</a></dd>
 </dl>
 </dd></dl>
@@ -325,13 +325,13 @@ Displays the path to the saved figure.</p>
 <dt>output_directory: string, optional (default=None)</dt>
 <dd>specify the folder where the figure needs to be saved.
 If the output directory that is specified does not exist, a new directory is created.</dd>
-<dt>format: string, optional (default=&#8217;png&#8217;)</dt>
+<dt>format: string, optional (default=’png’)</dt>
 <dd>format of the figure that needs to be saved.
-Note: we recommend &#8216;eps&#8217; for publication quality</dd>
-<dt>kwargs</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">dictionary, optional (default = {})</span><dd>add any matplotlib options in the form of a dictionary.
+Note: we recommend ‘eps’ for publication quality</dd>
+<dt>kwargs <span class="classifier-delimiter">:</span> <span class="classifier">dictionary, optional (default = {})</span></dt>
+<dd>add any matplotlib options in the form of a dictionary.
 provide keys in the form of a string.
-for example kwargs = {&#8216;key&#8217;:value}
+for example kwargs = {‘key’:value}
 <a class="reference external" href="https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure.savefig">https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html#matplotlib.figure.Figure.savefig</a></dd>
 </dl>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cheml.datasets</span> <span class="k">import</span> <span class="n">load_cep_homo</span>
@@ -350,7 +350,7 @@ for example kwargs = {&#8216;key&#8217;:value}
 <dl class="docutils">
 <dt>obj: matplotlib.axes._subplots.AxesSubplot or matplotlib.figure.Figure</dt>
 <dd>contains information about the plot</dd>
-<dt>main_directory: string, optional (default = &#8216;.&#8217;)</dt>
+<dt>main_directory: string, optional (default = ‘.’)</dt>
 <dd>specify the parent directory where the folder needs to be saved.</dd>
 </dl>
 </dd></dl>
@@ -376,7 +376,7 @@ for example kwargs = {&#8216;key&#8217;:value}
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Mojtaba Haghighatlari.
+        &copy; Copyright 2016, Mojtaba Haghighatlari and Hachmann lab.
 
     </p>
   </div>
@@ -398,7 +398,7 @@ for example kwargs = {&#8216;key&#8217;:value}
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.4.1',
+            VERSION:'0.4.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

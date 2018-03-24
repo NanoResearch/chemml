@@ -17,7 +17,7 @@ decorator
 
 :input tokens (receivers):
     | ``fig`` : a matplotlib object
-    |   types: ("<class 'matplotlib.figure.Figure'>",)
+    |   types: ("<class 'matplotlib.figure.Figure'>", "<class 'matplotlib.axes._subplots.AxesSubplot'>")
 
 :output tokens (senders):
     | ``fig`` : a matplotlib object

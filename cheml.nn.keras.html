@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>cheml.nn.keras module &mdash; ChemML 0.4.1 documentation</title>
+  <title>cheml.nn.keras module &mdash; ChemML 0.4.2 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ChemML 0.4.1 documentation" href="index.html"/>
+    <link rel="top" title="ChemML 0.4.2 documentation" href="index.html"/>
         <link rel="up" title="cheml library" href="cheml.html"/>
         <link rel="next" title="cheml.search module" href="cheml.search.html"/>
         <link rel="prev" title="cheml.preprocessing module" href="cheml.preprocessing.html"/> 
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                0.4.1
+                0.4.2
               </div>
             
           
@@ -166,18 +166,18 @@
 <em class="property">class </em><code class="descclassname">cheml.nn.keras.</code><code class="descname">MLP</code><span class="sig-paren">(</span><em>nhidden=1</em>, <em>nneurons=None</em>, <em>activations=None</em>, <em>learning_rate=0.01</em>, <em>lr_decay=0.0</em>, <em>nepochs=100</em>, <em>batch_size=100</em>, <em>loss='mean_squared_error'</em>, <em>regression=True</em>, <em>nclasses=None</em>, <em>layer_config_file=None</em>, <em>opt_config_file=None</em><span class="sig-paren">)</span><a class="headerlink" href="#cheml.nn.keras.MLP" title="Permalink to this definition">¶</a></dt>
 <dd><p>Class associated with Multi-Layer Perceptron (Neural Network)</p>
 <dl class="docutils">
-<dt>nhidden</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">int, optional, default: 1</span><dd>The number of hidden layers in the neural network (excluding input and output)</dd>
+<dt>nhidden <span class="classifier-delimiter">:</span> <span class="classifier">int, optional, default: 1</span></dt>
+<dd>The number of hidden layers in the neural network (excluding input and output)</dd>
 <dt>nneurons: list, optional, default: [100] * nhidden</dt>
 <dd>The number of nodes in each hidden layer. Must be of same length as nhidden</dd>
-<dt>activations: list, optional, default: [&#8216;sigmoid&#8217;] * nhidden</dt>
+<dt>activations: list, optional, default: [‘sigmoid’] * nhidden</dt>
 <dd>The activation type for each hidden layer. Must be of same length as nhidden.
 Refer <a class="reference external" href="https://keras.io/activations/">https://keras.io/activations/</a> for list of valid activations</dd>
 <dt>nepochs: int, optional, default: 100</dt>
 <dd>Number of training epochs.</dd>
 <dt>batch_size: int, optional, default: 100</dt>
 <dd>Number of training samples in mini-batch</dd>
-<dt>loss: str, optional, default: &#8216;mean_squared_error&#8217;</dt>
+<dt>loss: str, optional, default: ‘mean_squared_error’</dt>
 <dd>Type of loss used to train the neural network.
 Refer <a class="reference external" href="https://keras.io/losses/">https://keras.io/losses/</a> for list of valid losses</dd>
 <dt>regression: bool, optional, default: True</dt>
@@ -274,18 +274,18 @@ accuracy if classification</p>
 <dd><p>A Scikit_learn wrapper around Multi-Layer Perceptron (Neural Network) implemented in keras to be used as
 part of your scikit_learn workflow.</p>
 <dl class="docutils">
-<dt>nhidden</dt>
- <span class="classifier-delimiter">:</span> <span class="classifier">int, optional, default: 1</span><dd>The number of hidden layers in the neural network (excluding input and output)</dd>
+<dt>nhidden <span class="classifier-delimiter">:</span> <span class="classifier">int, optional, default: 1</span></dt>
+<dd>The number of hidden layers in the neural network (excluding input and output)</dd>
 <dt>nneurons: list, optional, default: [100] * nhidden</dt>
 <dd>The number of nodes in each hidden layer. Must be of same length as nhidden</dd>
-<dt>activations: list, optional, default: [&#8216;sigmoid&#8217;] * nhidden</dt>
+<dt>activations: list, optional, default: [‘sigmoid’] * nhidden</dt>
 <dd>The activation type for each hidden layer. Must be of same length as nhidden.
 Refer <a class="reference external" href="https://keras.io/activations/">https://keras.io/activations/</a> for list of valid activations</dd>
 <dt>nepochs: int, optional, default: 100</dt>
 <dd>Number of training epochs.</dd>
 <dt>batch_size: int, optional, default: 100</dt>
 <dd>Number of training samples in mini-batch</dd>
-<dt>loss: str, optional, default: &#8216;mean_squared_error&#8217;</dt>
+<dt>loss: str, optional, default: ‘mean_squared_error’</dt>
 <dd>Type of loss used to train the neural network.
 Refer <a class="reference external" href="https://keras.io/losses/">https://keras.io/losses/</a> for list of valid losses</dd>
 <dt>regression: bool, optional, default: True</dt>
@@ -365,7 +365,7 @@ accuracy if classification</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Mojtaba Haghighatlari.
+        &copy; Copyright 2016, Mojtaba Haghighatlari and Hachmann lab.
 
     </p>
   </div>
@@ -387,7 +387,7 @@ accuracy if classification</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.4.1',
+            VERSION:'0.4.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
