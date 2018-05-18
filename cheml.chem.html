@@ -87,8 +87,9 @@
             
                 <p class="caption"><span class="caption-text">ChemML Wrapper documentation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Format</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWTutorial.html">ChemML Wrapper Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File GUI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWReference.html">Wrapper Reference</a></li>
 </ul>
@@ -424,14 +425,15 @@ To select descriptors one by one based on descriptor names, use Script Wizard in
 </dl>
 <p>In the current version, we recommend the user to use this class with the following parameters:
 molInput = ‘file’
-molfile = path to one SMILES representation file with .smi format or a dictionary of other formats
+molfile = path to one SMILES representation file with .smi format or a dictionary of many filepaths
 script = ‘new’</p>
 </div></blockquote>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cheml.chem</span> <span class="k">import</span> <span class="n">Dragon</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">cheml.chem</span> <span class="k">import</span> <span class="n">Dragon</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">drg</span> <span class="o">=</span> <span class="n">Dragon</span><span class="p">(</span><span class="o">**</span><span class="n">parameters</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">drg</span><span class="o">.</span><span class="n">script_wizard</span><span class="p">(</span><span class="n">script</span><span class="p">,</span> <span class="n">output_directory</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">drg</span><span class="o">.</span><span class="n">script_wizard</span><span class="p">(</span><span class="n">script</span><span class="o">=</span><span class="s1">&#39;new&#39;</span><span class="p">,</span> <span class="n">output_directory</span><span class="o">=</span><span class="s1">&#39;./&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">drg</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">df_path</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">data_path</span>  <span class="c1"># path to the output file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df_path</span> <span class="o">=</span> <span class="n">drg</span><span class="o">.</span><span class="n">data_path</span>  <span class="c1"># path to the output file</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">df_path</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;python&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;No.&#39;</span><span class="p">,</span><span class="s1">&#39;NAME&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>

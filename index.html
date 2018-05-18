@@ -34,7 +34,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ChemML 0.4.2 documentation" href="#"/>
-        <link rel="next" title="Input File Format" href="CMLWInputFile.html"/> 
+        <link rel="next" title="ChemML Wrapper Tutorial" href="CMLWTutorial.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -85,8 +85,9 @@
             
                 <p class="caption"><span class="caption-text">ChemML Wrapper documentation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Format</a></li>
-<li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWTutorial.html">ChemML Wrapper Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File GUI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWReference.html">Wrapper Reference</a></li>
 </ul>
@@ -180,23 +181,24 @@ that ChemML is interfacing with, only if they can be easily and freely installed
 <dl class="docutils">
 <dt>Here is a list of external libraries and their version that will be installed with chemml:</dt>
 <dd><ul class="first last simple">
-<li>numpy&gt;=1.13</li>
-<li>pandas&gt;=0.20.3</li>
-<li>tensorflow==1.1.0</li>
-<li>keras==2.1.5</li>
-<li>scikit-learn==0.19.1</li>
-<li>babel&gt;=2.3.4</li>
-<li>matplotlib&gt;=1.5.1</li>
-<li>deap&gt;=1.2.2</li>
+<li>numpy (&gt;=1.13)</li>
+<li>pandas (&gt;=0.20.3)</li>
+<li>tensorflow (==1.1.0)</li>
+<li>keras (==2.1.5)</li>
+<li>scikit-learn (==0.19.1)</li>
+<li>babel (&gt;=2.3.4)</li>
+<li>matplotlib (&gt;=1.5.1)</li>
+<li>deap (&gt;=1.2.2)</li>
 <li>lxml</li>
-<li>ipywidgets</li>
+<li>ipywidgets (&gt;=7.1)</li>
+<li>widgetsnbextension (&gt;=3.1)</li>
 <li>graphviz</li>
 </ul>
 </dd>
 </dl>
 <p>Since some of the dependencies are accompanied by an exact version number, we recommend installation of ChemML in a virtual environment.
 If you have Anaconda installed on your system, you can enter:</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">codna</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">my_chemml_env</span> <span class="n">python</span><span class="o">=</span><span class="mf">2.7</span>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">my_chemml_env</span> <span class="n">python</span><span class="o">=</span><span class="mf">2.7</span>
 <span class="n">source</span> <span class="n">activate</span> <span class="n">my_chemml_env</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">chemml</span> <span class="o">--</span><span class="n">user</span> <span class="o">-</span><span class="n">U</span>
 </pre></div>
@@ -233,13 +235,19 @@ If you have Anaconda installed on your system, you can enter:</p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">ChemML Wrapper documentation</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Format</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="CMLWTutorial.html">ChemML Wrapper Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="CMLWTutorial.html#step-1-prepare-an-input-file">Step #1: prepare an input file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMLWTutorial.html#step-2-run-chemml-wrapper">Step #2: run ChemML Wrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CMLWTutorial.html#step-3-check-the-output-directory">Step #3: check the output directory</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWInputFile.html">Input File Manual</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="CMLWInputFile.html#input-file-overview">Input File Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CMLWInputFile.html#specific-characters">Specific Characters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="CMLWInputFile.html#general-rules">General Rules</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File Generator</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMLWInputFileGenerator.html">Input File GUI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWContentsTable.html">Table of Contents</a></li>
 <li class="toctree-l1"><a class="reference internal" href="CMLWReference.html">Wrapper Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="CMLWReference.html#enter">Enter</a></li>
@@ -280,7 +288,7 @@ If you have Anaconda installed on your system, you can enter:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="CMLWInputFile.html" class="btn btn-neutral float-right" title="Input File Format" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="CMLWTutorial.html" class="btn btn-neutral float-right" title="ChemML Wrapper Tutorial" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
