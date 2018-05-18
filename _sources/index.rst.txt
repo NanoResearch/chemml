@@ -120,7 +120,6 @@ ChemML is open and freely shared with the community under modified 3-clause BSD 
    cheml
 
 
-
 .. |Beta| image:: http://stlth.io/images/stlth-beta.jpg
    :width: 70 px
    :target: https://mojtabah.github.io/ChemML
